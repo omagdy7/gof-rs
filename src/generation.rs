@@ -1,20 +1,30 @@
 #![allow(unused_imports, unused_variables, unused_mut)]
 
+use crate::ui::*;
 use colored::Colorize;
 use crossterm::{
     cursor::{Hide, MoveTo, Show},
-    event,
     event::{poll, Event, KeyCode, KeyEvent},
+    event::{DisableMouseCapture, EnableMouseCapture},
+    execute,
     style::Stylize,
     terminal,
-    terminal::{EnterAlternateScreen, LeaveAlternateScreen},
-    ExecutableCommand, QueueableCommand,
+    terminal::{disable_raw_mode, enable_raw_mode, EnterAlternateScreen, LeaveAlternateScreen},
 };
 use rand::{thread_rng, Rng};
 use std::{
+    error::Error,
     io::{self, Write},
     thread::sleep,
     time::Duration,
+};
+use tui::{
+    backend::{Backend, CrosstermBackend},
+    layout::{Alignment, Constraint, Corner, Direction, Layout, Rect},
+    style::{Color, Modifier, Style},
+    text::{Span, Spans},
+    widgets::{Block, Borders, List, ListItem, ListState, Paragraph},
+    Frame, Terminal,
 };
 
 pub type Gen = Vec<Vec<Cell>>;
@@ -25,25 +35,23 @@ pub enum Cell {
     Dead,
 }
 
-pub fn render_gen(stdout: &mut io::Stdout, gen: &Gen) {
-    for i in 0..gen.len() {
-        for j in 0..gen[0].len() {
-            stdout.queue(MoveTo(i as u16, j as u16)).unwrap();
+pub fn render_gen(chunk: &Rect, gen: &Gen) {
+    for i in 0..chunk.height as usize {
+        for j in 0..chunk.width as usize {
             match gen[i][j] {
                 // Cell::Alive => print!("😎"),
                 // Cell::Alive => print!("🦀"),
                 Cell::Alive => print!("{}", "X".color("blue")),
                 Cell::Dead => print!("{}", "-".color("red")),
             }
-            stdout.flush().unwrap();
         }
     }
 }
 
-pub fn new_gen() -> Gen {
+pub fn new_gen(chunk: &Rect) -> Gen {
     let cells = vec![Cell::Dead, Cell::Dead, Cell::Alive, Cell::Dead, Cell::Alive];
-    let rows: u16 = terminal::size().unwrap().1;
-    let cols: u16 = terminal::size().unwrap().0;
+    let cols: u16 = chunk.height;
+    let rows: u16 = chunk.width;
     let mut colums: Vec<Vec<Cell>> = Vec::new();
     for _ in 0..cols {
         let mut col: Vec<Cell> = Vec::new();
@@ -54,6 +62,21 @@ pub fn new_gen() -> Gen {
         colums.push(col);
     }
     colums
+}
+
+pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
+    let mut spans = vec![];
+    for i in 0..gen.len() {
+        let mut txt = String::new();
+        for j in 0..gen[0].len() {
+            match gen[i][j] {
+                Cell::Alive => txt.push('X'),
+                Cell::Dead => txt.push('-'),
+            }
+        }
+        spans.push(Spans::from(txt));
+    }
+    spans
 }
 
 pub fn is_valid_idx(i: i32, j: i32, m: i32, n: i32) -> bool {
@@ -83,9 +106,10 @@ pub fn get_alive(x: i32, y: i32, cur_gen: &Gen) -> i32 {
     alive_cnt
 }
 
-pub fn next_gen(cur_gen: &mut Gen) -> Gen {
-    let m: i32 = cur_gen.len() as i32;
-    let n: i32 = cur_gen[0].len() as i32;
+pub fn next_gen(app: &mut App) -> Gen {
+    app.flag = true;
+    let m: i32 = app.cur_gen.len() as i32;
+    let n: i32 = app.cur_gen[0].len() as i32;
     let mut nxt_gen: Gen = Gen::new();
     for _ in 0..m {
         let mut col: Vec<Cell> = Vec::new();
@@ -97,9 +121,9 @@ pub fn next_gen(cur_gen: &mut Gen) -> Gen {
 
     for i in 0..m {
         for j in 0..n {
-            let alive = get_alive(i, j, cur_gen);
+            let alive = get_alive(i, j, &app.cur_gen);
 
-            match cur_gen[i as usize][j as usize] {
+            match app.cur_gen[i as usize][j as usize] {
                 Cell::Alive => {
                     if alive == 2 || alive == 3 {
                         nxt_gen[i as usize][j as usize] = Cell::Alive;
@@ -115,57 +139,84 @@ pub fn next_gen(cur_gen: &mut Gen) -> Gen {
             }
         }
     }
-    *cur_gen = nxt_gen.clone();
+    app.cur_gen = nxt_gen.clone();
     nxt_gen
 }
 
-pub fn init() {
+pub fn init() -> Result<(), Box<dyn Error>> {
+    // setup terminal
+    enable_raw_mode()?;
     let mut stdout = io::stdout();
-    let mut frame: Gen = new_gen();
-    let mut nxt;
+    execute!(stdout, EnterAlternateScreen, EnableMouseCapture)?;
+    let backend = CrosstermBackend::new(stdout);
+    let mut terminal = Terminal::new(backend)?;
 
-    terminal::enable_raw_mode().unwrap();
-    stdout.execute(EnterAlternateScreen).unwrap();
-    stdout.execute(Hide).unwrap();
+    // create app and run it
+    let tick_rate = Duration::from_millis(250);
+    let app = App::new();
+    let res = run_app(&mut terminal, app, tick_rate);
 
-    'gameloop: loop {
-        while event::poll(Duration::default()).unwrap() {
-            if let Event::Key(key_event) = event::read().unwrap() {
-                match key_event.code {
-                    KeyCode::Esc | KeyCode::Char('q') => {
-                        break 'gameloop;
-                    }
-                    KeyCode::Char('s') => {
-                        frame = new_gen();
-                        render_gen(&mut stdout, &frame)
-                    }
+    // restore terminal
+    disable_raw_mode()?;
+    execute!(
+        terminal.backend_mut(),
+        LeaveAlternateScreen,
+        DisableMouseCapture
+    )?;
+    terminal.show_cursor()?;
 
-                    KeyCode::Char('n') => {
-                        nxt = next_gen(&mut frame);
-                        render_gen(&mut stdout, &nxt)
-                    }
-                    KeyCode::Char('a') => 'animate: loop {
-                        nxt = next_gen(&mut frame);
-                        render_gen(&mut stdout, &nxt);
-                        sleep(Duration::from_millis(16));
-                        if (poll(Duration::from_millis(1))).unwrap() {
-                            if let Event::Key(k) = event::read().unwrap() {
-                                match k.code {
-                                    KeyCode::Char('q') => break 'animate,
-                                    _ => {}
-                                }
-                            }
-                        } else {
-                        }
-                    },
-                    _ => {}
-                }
-            }
-        }
+    if let Err(err) = res {
+        println!("{:?}", err)
     }
 
-    stdout.execute(Show).unwrap();
-    stdout.execute(LeaveAlternateScreen).unwrap();
-    terminal::disable_raw_mode().unwrap();
+    Ok(())
 
+    // let mut stdout = io::stdout();
+    // let mut frame: Gen = new_gen();
+    // let mut nxt;
+    //
+    // terminal::enable_raw_mode().unwrap();
+    // stdout.execute(EnterAlternateScreen).unwrap();
+    // stdout.execute(Hide).unwrap();
+    //
+    // 'gameloop: loop {
+    //     while event::poll(Duration::default()).unwrap() {
+    //         if let Event::Key(key_event) = event::read().unwrap() {
+    //             match key_event.code {
+    //                 KeyCode::Esc | KeyCode::Char('q') => {
+    //                     break 'gameloop;
+    //                 }
+    //                 KeyCode::Char('s') => {
+    //                     frame = new_gen();
+    //                     render_gen(&mut stdout, &frame)
+    //                 }
+    //
+    //                 KeyCode::Char('n') => {
+    //                     nxt = next_gen(&mut frame);
+    //                     render_gen(&mut stdout, &nxt)
+    //                 }
+    //                 KeyCode::Char('a') => 'animate: loop {
+    //                     nxt = next_gen(&mut frame);
+    //                     render_gen(&mut stdout, &nxt);
+    //                     sleep(Duration::from_millis(16));
+    //                     if (poll(Duration::from_millis(1))).unwrap() {
+    //                         if let Event::Key(k) = event::read().unwrap() {
+    //                             match k.code {
+    //                                 KeyCode::Char('q') => break 'animate,
+    //                                 _ => {}
+    //                             }
+    //                         }
+    //                     } else {
+    //                     }
+    //                 },
+    //                 _ => {}
+    //             }
+    //         }
+    //     }
+    // }
+    //
+    // stdout.execute(Show).unwrap();
+    // stdout.execute(LeaveAlternateScreen).unwrap();
+    // terminal::disable_raw_mode().unwrap();
+    // Ok(())
 }
