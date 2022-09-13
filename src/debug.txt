@@ -1,0 +1,13 @@
+warning: function `render_gen` is never used
+  --> src/generation.rs:38:8
+   |
+38 | pub fn render_gen(chunk: &Rect, gen: &Gen) {
+   |        ^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: `gof-rs` (bin "gof-rs") generated 1 warning
+    Finished dev [unoptimized + debuginfo] target(s) in 0.02s
+     Running `/home/pengu/test/rust-dev/gof-rs/target/debug/gof-rs`
+heigt: 44
+width: 62

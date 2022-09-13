@@ -50,18 +50,20 @@ pub fn render_gen(chunk: &Rect, gen: &Gen) {
 
 pub fn new_gen(chunk: &Rect) -> Gen {
     let cells = vec![Cell::Dead, Cell::Dead, Cell::Alive, Cell::Dead, Cell::Alive];
-    let cols: u16 = chunk.height;
-    let rows: u16 = chunk.width;
-    let mut colums: Vec<Vec<Cell>> = Vec::new();
-    for _ in 0..cols {
-        let mut col: Vec<Cell> = Vec::new();
-        for _ in 0..rows {
+    let cols: u16 = chunk.width - 90;
+    let rows: u16 = chunk.height - 2;
+    eprintln!("heigt: {}", rows);
+    eprintln!("width: {}", cols);
+    let mut grid: Vec<Vec<Cell>> = Vec::new();
+    for _ in 0..rows {
+        let mut row: Vec<Cell> = Vec::new();
+        for _ in 0..cols{
             let rand = thread_rng().gen_range(0..10);
-            col.push(cells[rand % 5]);
+            row.push(cells[rand % 5]);
         }
-        colums.push(col);
+        grid.push(row);
     }
-    colums
+    grid
 }
 
 pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
@@ -70,8 +72,12 @@ pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
         let mut txt = String::new();
         for j in 0..gen[0].len() {
             match gen[i][j] {
-                Cell::Alive => txt.push('X'),
-                Cell::Dead => txt.push('-'),
+                // Cell::Alive => print!("😎"),
+                // Cell::Alive => txt.push_str("🦀"),
+                Cell::Alive => txt.push_str("❌"),
+                Cell::Dead => txt.push_str("⬛️"),
+                // Cell::Alive => txt.push('X'),
+                // Cell::Dead => txt.push('-'),
             }
         }
         spans.push(Spans::from(txt));

@@ -115,13 +115,8 @@ pub fn run_app<B: Backend>(
     let mut last_tick = Instant::now();
     loop {
         terminal.draw(|f| ui(f, &mut app))?;
-        // let mut frame = app.generation;
-        // let nxt;
 
-        // let timeout = tick_rate
-        //     .checked_sub(last_tick.elapsed())
-        //     .unwrap_or_else(|| Duration::from_secs(0));
-        let timeout = Duration::from_millis(40);
+        let timeout = Duration::from_millis(10);
         if crossterm::event::poll(timeout)? {
             if let Event::Key(key) = event::read()? {
                 match key.code {
@@ -214,6 +209,6 @@ fn ui<B: Backend>(f: &mut Frame<B>, app: &mut App) {
     let paragraph = Paragraph::new(spans.clone())
         .style(Style::default().bg(Color::Black).fg(Color::Blue))
         .block(create_block(" Game Of Life "))
-        .alignment(Alignment::Left);
+        .alignment(Alignment::Center);
     f.render_widget(paragraph, chunks[1]);
 }
