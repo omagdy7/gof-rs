@@ -13,8 +13,11 @@ use crossterm::{
 };
 use rand::{thread_rng, Rng};
 use std::{
+    env,
     error::Error,
-    io::{self, Write},
+    fs::File,
+    io::{self, BufRead, BufReader, Write},
+    path::Path,
     thread::sleep,
     time::Duration,
 };
@@ -56,7 +59,7 @@ pub fn new_gen(chunk: &Rect, app: &mut App) -> Gen {
     let mut grid: Vec<Vec<Cell>> = Vec::new();
     for _ in 0..rows {
         let mut row: Vec<Cell> = Vec::new();
-        for _ in 0..cols{
+        for _ in 0..cols {
             let rand = thread_rng().gen_range(0..10);
             row.push(cells[rand % 5]);
         }
@@ -67,7 +70,7 @@ pub fn new_gen(chunk: &Rect, app: &mut App) -> Gen {
 
 pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
     let mut spans = vec![];
-    let alive_cells = vec!["🟥","🟧","🟨","🟩","🟦", "🟪" ,"🟫"];
+    let alive_cells = vec!["🟥", "🟧", "🟨", "🟩", "🟦", "🟪", "🟫"];
     for i in 0..gen.len() {
         let mut txt = String::new();
         for j in 0..gen[0].len() {
@@ -75,7 +78,8 @@ pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
             match gen[i][j] {
                 // Cell::Alive => print!("😎"),
                 // Cell::Alive => txt.push_str("🦀"),
-                Cell::Alive => txt.push_str(alive_cells[rand % alive_cells.len()]),
+                // Cell::Alive => txt.push_str(alive_cells[rand % alive_cells.len()]),
+                Cell::Alive => txt.push_str(alive_cells[0]),
                 Cell::Dead => txt.push_str("⬛️"),
                 // Cell::Alive => txt.push('X'),
                 // Cell::Dead => txt.push('-'),
@@ -86,7 +90,7 @@ pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
     spans
 }
 
-// pub fn 
+// pub fn
 
 pub fn is_valid_idx(i: i32, j: i32, m: i32, n: i32) -> bool {
     i >= 0 && i < m && j >= 0 && j < n
@@ -149,6 +153,26 @@ pub fn next_gen(app: &mut App) -> Gen {
     }
     app.cur_gen = nxt_gen.clone();
     nxt_gen
+}
+
+pub fn gen_from_file(path: &Path) -> Gen {
+    let mut gen = Gen::new();
+    let file = File::open(path).expect("File not found");
+    let reader = BufReader::new(file);
+
+    for line in reader.lines() {
+        let line = line.unwrap();
+        let mut row: Vec<Cell> = vec![];
+        for ch in line.chars() {
+            if ch == '.' {
+                row.push(Cell::Dead);
+            } else {
+                row.push(Cell::Alive);
+            }
+        }
+        gen.push(row);
+    }
+    gen
 }
 
 pub fn init() -> Result<(), Box<dyn Error>> {

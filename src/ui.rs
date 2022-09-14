@@ -6,6 +6,7 @@ use crossterm::{
 use std::{
     error::Error,
     io,
+    path::Path,
     thread::sleep,
     time::{Duration, Instant},
 };
@@ -73,7 +74,7 @@ impl<T> StatefulList<T> {
 /// Check the event handling at the bottom to see how to change the state on incoming events.
 /// Check the drawing logic for items on how to specify the highlighting style for selected items.
 pub struct App<'a> {
-    pub items: StatefulList<(&'a str, usize)>,
+    pub items: StatefulList<(&'a str, &'a Path)>,
     pub flag_cur: bool,
     pub layout: Layout,
     pub cur_gen: Gen,
@@ -85,21 +86,30 @@ impl<'a> App<'a> {
     pub fn new() -> App<'a> {
         App {
             items: StatefulList::with_items(vec![
-                ("Glider", 1),
-                ("achimsotherp16", 2),
-                ("achimsp11", 3),
-                ("achimsp144", 4),
-                ("achimsp16", 4),
-                ("achimsp4", 4),
-                ("achimsp5original", 4),
-                ("achimsp8", 4),
-                ("aforall", 4),
-                ("againstthegraingeryshep", 4),
-                ("aircraftcarrier", 4),
-                ("almostgun1", 4),
-                ("almostgun2", 4),
-                ("almostknightship", 4),
-                ("alternatewickstretcher1", 4),
+                (
+                    "glider",
+                    Path::new("/home/pengu/test/rust-dev/gof-rs/presets/glider.txt"),
+                ),
+                (
+                    "pattern1",
+                    Path::new("/home/pengu/test/rust-dev/gof-rs/presets/pattern1.txt"),
+                ),
+                (
+                    "pattern2",
+                    Path::new("/home/pengu/test/rust-dev/gof-rs/presets/pattern2.txt"),
+                ),
+                (
+                    "pattern3",
+                    Path::new("/home/pengu/test/rust-dev/gof-rs/presets/pattern3.txt"),
+                ),
+                // (
+                //     "pattern4",
+                //     Path::new("/home/pengu/test/rust-dev/gof-rs/presets/pattern4.txt"),
+                // ),
+                // (
+                //     "pattern5",
+                //     Path::new("/home/pengu/test/rust-dev/gof-rs/presets/pattern5.txt"),
+                // ),
             ]),
             flag_cur: false,
             layout: Layout::default()
@@ -109,13 +119,6 @@ impl<'a> App<'a> {
             nxt_gen: Gen::new(),
         }
     }
-
-    // Rotate through the event list.
-    // This only exists to simulate some kind of "progress"
-    // fn on_tick(&mut self) {
-    //     let event = self.events.remove(0);
-    //     self.events.push(event);
-    // }
 }
 
 pub fn run_app<B: Backend>(
@@ -124,6 +127,7 @@ pub fn run_app<B: Backend>(
     tick_rate: Duration,
 ) -> io::Result<()> {
     let mut last_tick = Instant::now();
+    let mut item_cnt = 0;
     loop {
         terminal.draw(|f| ui_list(f, &mut app))?;
 
@@ -133,7 +137,12 @@ pub fn run_app<B: Backend>(
                 match key.code {
                     KeyCode::Char('q') => return Ok(()),
                     KeyCode::Left | KeyCode::Char('h') => app.items.unselect(),
-                    KeyCode::Down | KeyCode::Char('j') => app.items.next(),
+                    KeyCode::Down | KeyCode::Char('j') => {
+                        app.items.next();
+                        app.cur_gen =
+                            gen_from_file(app.items.items[item_cnt % app.items.items.len()].1);
+                        item_cnt += 1;
+                    }
                     KeyCode::Up | KeyCode::Char('k') => app.items.previous(),
                     KeyCode::Char('n') => {
                         terminal.draw(|f| ui_game(f, &mut app))?;
@@ -148,7 +157,7 @@ pub fn run_app<B: Backend>(
                                     _ => {}
                                 }
                             }
-                        } 
+                        }
                     },
                     _ => {}
                 }
@@ -158,9 +167,8 @@ pub fn run_app<B: Backend>(
 }
 
 fn ui_list<B: Backend>(f: &mut Frame<B>, app: &mut App) {
-
     let chunks = app.layout.split(f.size());
-    // Iterate through all elements in the `items` app and append some debug text to it.
+
     let items: Vec<ListItem> = app
         .items
         .items
@@ -171,7 +179,6 @@ fn ui_list<B: Backend>(f: &mut Frame<B>, app: &mut App) {
         })
         .collect();
 
-    // Create a List from all list items and highlight the currently selected one
     let items = List::new(items)
         .block(Block::default().borders(Borders::ALL).title("List"))
         .highlight_style(
@@ -181,12 +188,11 @@ fn ui_list<B: Backend>(f: &mut Frame<B>, app: &mut App) {
         )
         .highlight_symbol("> ");
 
-    // We can now render the item list
     f.render_stateful_widget(items, chunks[0], &mut app.items.state);
-
 
     if !app.flag_cur {
         app.cur_gen = new_gen(&chunks[1], app);
+        // app.cur_gen = gen_from_file(Path::new("/home/pengu/test/rust-dev/gof-rs/presets/glider.txt"));
     }
     let spans = gen_to_spans(&app.cur_gen);
 
@@ -205,9 +211,7 @@ fn ui_list<B: Backend>(f: &mut Frame<B>, app: &mut App) {
         .block(create_block(" Game Of Life "))
         .alignment(Alignment::Center);
     f.render_widget(paragraph, chunks[1]);
-
 }
-
 
 fn ui_game<B: Backend>(f: &mut Frame<B>, app: &mut App) {
     let chunks = app.layout.split(f.size());
@@ -253,5 +257,4 @@ fn ui_game<B: Backend>(f: &mut Frame<B>, app: &mut App) {
         .block(create_block(" Game Of Life "))
         .alignment(Alignment::Center);
     f.render_widget(paragraph, chunks[1]);
-
 }
