@@ -48,12 +48,11 @@ pub fn render_gen(chunk: &Rect, gen: &Gen) {
     }
 }
 
-pub fn new_gen(chunk: &Rect) -> Gen {
+pub fn new_gen(chunk: &Rect, app: &mut App) -> Gen {
+    app.flag_cur = true;
     let cells = vec![Cell::Dead, Cell::Dead, Cell::Alive, Cell::Dead, Cell::Alive];
     let cols: u16 = chunk.width - 90;
     let rows: u16 = chunk.height - 2;
-    eprintln!("heigt: {}", rows);
-    eprintln!("width: {}", cols);
     let mut grid: Vec<Vec<Cell>> = Vec::new();
     for _ in 0..rows {
         let mut row: Vec<Cell> = Vec::new();
@@ -68,13 +67,15 @@ pub fn new_gen(chunk: &Rect) -> Gen {
 
 pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
     let mut spans = vec![];
+    let alive_cells = vec!["🟥","🟧","🟨","🟩","🟦", "🟪" ,"🟫"];
     for i in 0..gen.len() {
         let mut txt = String::new();
         for j in 0..gen[0].len() {
+            let rand = thread_rng().gen_range(0..10);
             match gen[i][j] {
                 // Cell::Alive => print!("😎"),
                 // Cell::Alive => txt.push_str("🦀"),
-                Cell::Alive => txt.push_str("❌"),
+                Cell::Alive => txt.push_str(alive_cells[rand % alive_cells.len()]),
                 Cell::Dead => txt.push_str("⬛️"),
                 // Cell::Alive => txt.push('X'),
                 // Cell::Dead => txt.push('-'),
@@ -84,6 +85,8 @@ pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
     }
     spans
 }
+
+// pub fn 
 
 pub fn is_valid_idx(i: i32, j: i32, m: i32, n: i32) -> bool {
     i >= 0 && i < m && j >= 0 && j < n
@@ -113,7 +116,6 @@ pub fn get_alive(x: i32, y: i32, cur_gen: &Gen) -> i32 {
 }
 
 pub fn next_gen(app: &mut App) -> Gen {
-    app.flag = true;
     let m: i32 = app.cur_gen.len() as i32;
     let n: i32 = app.cur_gen[0].len() as i32;
     let mut nxt_gen: Gen = Gen::new();
@@ -176,53 +178,4 @@ pub fn init() -> Result<(), Box<dyn Error>> {
     }
 
     Ok(())
-
-    // let mut stdout = io::stdout();
-    // let mut frame: Gen = new_gen();
-    // let mut nxt;
-    //
-    // terminal::enable_raw_mode().unwrap();
-    // stdout.execute(EnterAlternateScreen).unwrap();
-    // stdout.execute(Hide).unwrap();
-    //
-    // 'gameloop: loop {
-    //     while event::poll(Duration::default()).unwrap() {
-    //         if let Event::Key(key_event) = event::read().unwrap() {
-    //             match key_event.code {
-    //                 KeyCode::Esc | KeyCode::Char('q') => {
-    //                     break 'gameloop;
-    //                 }
-    //                 KeyCode::Char('s') => {
-    //                     frame = new_gen();
-    //                     render_gen(&mut stdout, &frame)
-    //                 }
-    //
-    //                 KeyCode::Char('n') => {
-    //                     nxt = next_gen(&mut frame);
-    //                     render_gen(&mut stdout, &nxt)
-    //                 }
-    //                 KeyCode::Char('a') => 'animate: loop {
-    //                     nxt = next_gen(&mut frame);
-    //                     render_gen(&mut stdout, &nxt);
-    //                     sleep(Duration::from_millis(16));
-    //                     if (poll(Duration::from_millis(1))).unwrap() {
-    //                         if let Event::Key(k) = event::read().unwrap() {
-    //                             match k.code {
-    //                                 KeyCode::Char('q') => break 'animate,
-    //                                 _ => {}
-    //                             }
-    //                         }
-    //                     } else {
-    //                     }
-    //                 },
-    //                 _ => {}
-    //             }
-    //         }
-    //     }
-    // }
-    //
-    // stdout.execute(Show).unwrap();
-    // stdout.execute(LeaveAlternateScreen).unwrap();
-    // terminal::disable_raw_mode().unwrap();
-    // Ok(())
 }

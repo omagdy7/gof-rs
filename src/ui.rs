@@ -74,7 +74,7 @@ impl<T> StatefulList<T> {
 /// Check the drawing logic for items on how to specify the highlighting style for selected items.
 pub struct App<'a> {
     pub items: StatefulList<(&'a str, usize)>,
-    pub flag: bool,
+    pub flag_cur: bool,
     pub layout: Layout,
     pub cur_gen: Gen,
     pub nxt_gen: Gen,
@@ -86,11 +86,22 @@ impl<'a> App<'a> {
         App {
             items: StatefulList::with_items(vec![
                 ("Glider", 1),
-                ("Glider", 2),
-                ("Glider", 1),
-                ("Glider", 3),
+                ("achimsotherp16", 2),
+                ("achimsp11", 3),
+                ("achimsp144", 4),
+                ("achimsp16", 4),
+                ("achimsp4", 4),
+                ("achimsp5original", 4),
+                ("achimsp8", 4),
+                ("aforall", 4),
+                ("againstthegraingeryshep", 4),
+                ("aircraftcarrier", 4),
+                ("almostgun1", 4),
+                ("almostgun2", 4),
+                ("almostknightship", 4),
+                ("alternatewickstretcher1", 4),
             ]),
-            flag: false,
+            flag_cur: false,
             layout: Layout::default()
                 .direction(Direction::Horizontal)
                 .constraints([Constraint::Percentage(15), Constraint::Percentage(85)].as_ref()),
@@ -114,7 +125,7 @@ pub fn run_app<B: Backend>(
 ) -> io::Result<()> {
     let mut last_tick = Instant::now();
     loop {
-        terminal.draw(|f| ui(f, &mut app))?;
+        terminal.draw(|f| ui_list(f, &mut app))?;
 
         let timeout = Duration::from_millis(10);
         if crossterm::event::poll(timeout)? {
@@ -124,49 +135,83 @@ pub fn run_app<B: Backend>(
                     KeyCode::Left | KeyCode::Char('h') => app.items.unselect(),
                     KeyCode::Down | KeyCode::Char('j') => app.items.next(),
                     KeyCode::Up | KeyCode::Char('k') => app.items.previous(),
-                    _ => {} // KeyCode::Char('s') => {
-                            //     frame = new_gen();
-                            //     render_gen(&mut stdout, &frame);
-                            //     Ok(());
-                            // }
-                            // KeyCode::Char('n') => {
-                            //     nxt = next_gen(&mut frame);
-                            //     render_gen(&mut stdout, &nxt)
-                            // }
-                            // KeyCode::Char('a') => 'animate: loop {
-                            //     nxt = next_gen(&mut frame);
-                            //     render_gen(&mut stdout, &nxt);
-                            //     sleep(Duration::from_millis(16));
-                            //     if (crossterm::event::poll(Duration::from_millis(1))).unwrap() {
-                            //         if let Event::Key(k) = event::read().unwrap() {
-                            //             match k.code {
-                            //                 KeyCode::Char('q') => break 'animate,
-                            //                 _ => {}
-                            //             }
-                            //         }
-                            //     } else {
-                            //     }
-                            // },
-                            // _ => {}
+                    KeyCode::Char('n') => {
+                        terminal.draw(|f| ui_game(f, &mut app))?;
+                    }
+                    KeyCode::Char('a') => 'animate: loop {
+                        terminal.draw(|f| ui_game(f, &mut app))?;
+                        sleep(Duration::from_millis(16));
+                        if (crossterm::event::poll(Duration::from_millis(1))).unwrap() {
+                            if let Event::Key(k) = event::read().unwrap() {
+                                match k.code {
+                                    KeyCode::Char('s') => break 'animate,
+                                    _ => {}
+                                }
+                            }
+                        } 
+                    },
+                    _ => {}
                 }
             }
         }
-        // if last_tick.elapsed() >= tick_rate {
-        //     app.on_tick();
-        //     last_tick = Instant::now();
-        // }
     }
 }
 
-fn ui<B: Backend>(f: &mut Frame<B>, app: &mut App) {
-    // Create two chunks with equal horizontal screen space
-    // let chunks = Layout::default()
-    //     .direction(Direction::Horizontal)
-    //     .constraints([Constraint::Percentage(15), Constraint::Percentage(85)].as_ref());
-    // .split(f.size());
+fn ui_list<B: Backend>(f: &mut Frame<B>, app: &mut App) {
 
     let chunks = app.layout.split(f.size());
     // Iterate through all elements in the `items` app and append some debug text to it.
+    let items: Vec<ListItem> = app
+        .items
+        .items
+        .iter()
+        .map(|i| {
+            let lines = vec![Spans::from(i.0)];
+            ListItem::new(lines).style(Style::default().fg(Color::Red).bg(Color::Black))
+        })
+        .collect();
+
+    // Create a List from all list items and highlight the currently selected one
+    let items = List::new(items)
+        .block(Block::default().borders(Borders::ALL).title("List"))
+        .highlight_style(
+            Style::default()
+                .bg(Color::White)
+                .add_modifier(Modifier::ITALIC),
+        )
+        .highlight_symbol("> ");
+
+    // We can now render the item list
+    f.render_stateful_widget(items, chunks[0], &mut app.items.state);
+
+
+    if !app.flag_cur {
+        app.cur_gen = new_gen(&chunks[1], app);
+    }
+    let spans = gen_to_spans(&app.cur_gen);
+
+    let create_block = |title| {
+        Block::default()
+            .borders(Borders::ALL)
+            .style(Style::default().bg(Color::Black).fg(Color::Red))
+            .title(Span::styled(
+                title,
+                Style::default().add_modifier(Modifier::BOLD),
+            ))
+            .title_alignment(Alignment::Center)
+    };
+    let paragraph = Paragraph::new(spans.clone())
+        .style(Style::default().bg(Color::Black).fg(Color::Blue))
+        .block(create_block(" Game Of Life "))
+        .alignment(Alignment::Center);
+    f.render_widget(paragraph, chunks[1]);
+
+}
+
+
+fn ui_game<B: Backend>(f: &mut Frame<B>, app: &mut App) {
+    let chunks = app.layout.split(f.size());
+
     let items: Vec<ListItem> = app
         .items
         .items
@@ -190,9 +235,6 @@ fn ui<B: Backend>(f: &mut Frame<B>, app: &mut App) {
     // We can now render the item list
     f.render_stateful_widget(items, chunks[0], &mut app.items.state);
 
-    if !app.flag {
-        app.cur_gen = new_gen(&chunks[1]);
-    }
     let nxt = next_gen(app);
     let spans = gen_to_spans(&nxt);
 
@@ -211,4 +253,5 @@ fn ui<B: Backend>(f: &mut Frame<B>, app: &mut App) {
         .block(create_block(" Game Of Life "))
         .alignment(Alignment::Center);
     f.render_widget(paragraph, chunks[1]);
+
 }
