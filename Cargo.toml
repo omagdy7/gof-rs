@@ -19,6 +19,6 @@ tui = "0.19.0"
 
 [[bin]]
 name="gof-rs"
-path="src/"
+path="src/main.rs"
 
 
