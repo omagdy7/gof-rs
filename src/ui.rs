@@ -21,7 +21,6 @@ use tui::{
 
 use crate::generation::*;
 
-
 pub struct StatefulList<T> {
     state: ListState,
     items: Vec<T>,
@@ -100,10 +99,7 @@ impl App {
     }
 }
 
-pub fn run_app<B: Backend>(
-    terminal: &mut Terminal<B>,
-    mut app: App,
-) -> io::Result<()> {
+pub fn run_app<B: Backend>(terminal: &mut Terminal<B>, mut app: App) -> io::Result<()> {
     let mut last_tick = Instant::now();
     let mut item_cnt = 1;
     loop {
@@ -121,19 +117,16 @@ pub fn run_app<B: Backend>(
                             item_cnt += 1;
                         }
                         app.items.next();
-                        app.cur_gen =
-                            gen_from_file(&app.items.items[item_cnt].1);
+                        app.cur_gen = gen_from_file(&app.items.items[item_cnt].1);
                     }
                     KeyCode::Up | KeyCode::Char('k') => {
                         if item_cnt == 0 {
                             item_cnt = app.items.items.len() - 1;
-                        }
-                        else {
+                        } else {
                             item_cnt -= 1;
                         }
                         app.items.previous();
-                        app.cur_gen =
-                            gen_from_file(&app.items.items[item_cnt].1);
+                        app.cur_gen = gen_from_file(&app.items.items[item_cnt].1);
                     }
                     KeyCode::Char('n') => {
                         terminal.draw(|f| ui_game(f, &mut app))?;
@@ -203,7 +196,11 @@ fn ui_game<B: Backend>(f: &mut Frame<B>, app: &mut App) {
 
     // Create a List from all list items and highlight the currently selected one
     let items = List::new(items)
-        .block(Block::default().borders(Borders::ALL).title("Cool Patterns"))
+        .block(
+            Block::default()
+                .borders(Borders::ALL)
+                .title("Cool Patterns"),
+        )
         .highlight_style(
             Style::default()
                 .bg(Color::Blue)
@@ -212,7 +209,6 @@ fn ui_game<B: Backend>(f: &mut Frame<B>, app: &mut App) {
         .highlight_symbol("> ");
 
     f.render_stateful_widget(items, chunks[0], &mut app.items.state);
-
 
     let nxt = next_gen(app);
     let spans = gen_to_spans(&nxt);
