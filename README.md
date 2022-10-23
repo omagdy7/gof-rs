@@ -13,12 +13,14 @@
 # How to run
 ```
 git clone https://github.com/omagdy7/gof-rs
+cd gof-rs
 cargo run --release
 ```
 
 # TODOs
-- [x] Add a lot of unique patterns
-- [ ] Add current generation number
-- [ ] Add full screen mode without the left bar
+- [x] Add a lot of unique patterns.
+- [ ] Add all of the patterns to some sort of database.
+- [ ] Add current generation number.
+- [ ] Add full screen mode without the left bar.
 
 
