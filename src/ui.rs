@@ -82,14 +82,29 @@ pub struct App {
 
 impl App {
     pub fn new() -> App {
-        let mut v = vec![];
-        for i in 1..=513 {
-            let name = format!("pattern{}", i);
-            let p = format!("./presets/patterns/pattern{}.txt", i);
-            v.push((name.to_owned(), Path::new(p.as_str()).to_owned()));
+        fn read_presets() -> io::Result<Vec<(String, PathBuf)>> {
+            let mut result = Vec::new();
+            for path in std::fs::read_dir("./presets/patterns")? {
+                let path = path?.path();
+                if !path.is_file() {
+                    continue;
+                }
+                if let Some(file_name) = path.file_name() {
+                    let file_name = file_name.to_string_lossy();
+                    if file_name.starts_with("pattern") && file_name.ends_with(".txt") {
+                        result.push((file_name.trim_end_matches(".txt").to_owned(), path));
+                    }
+                }
+            }
+            result.sort_by_key(|(name, _)| {
+                name.trim_start_matches("pattern")
+                    .parse::<u32>()
+                    .unwrap_or(0)
+            });
+            Ok(result)
         }
         App {
-            items: StatefulList::with_items(v),
+            items: StatefulList::with_items(read_presets().unwrap_or_else(|_| Vec::new())),
             flag_cur: false,
             layout: Layout::default()
                 .direction(Direction::Horizontal)
