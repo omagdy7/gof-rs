@@ -7,7 +7,7 @@ description = "Game of life in your terminal with over 500 uniquer patterns to c
 repository = "https://github.com/omagdy7/gof-rs"
 keywords = ["cli", "game-of-life"]
 edition = "2021"
-include = ["/presets/patterns/*.txt"]
+include = ["../presets/patterns/*.txt"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -19,4 +19,6 @@ tui = "0.19.0"
 
 [[bin]]
 name="gof-rs"
+path="src/"
+
 
