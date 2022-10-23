@@ -1,4 +1,4 @@
-# Contorols
+# Controls
 * a: play animation
 * n: next generation
 * s: stop
@@ -14,7 +14,7 @@ git clone https://github.com/omagdy7/gof-rs
 cargo run --release
 ```
 
-#TODOs
+# TODOs
 - [x] Add a lot of unique patterns
 - [ ] Add current generation number
 - [ ] Add full screen mode without the left bar
