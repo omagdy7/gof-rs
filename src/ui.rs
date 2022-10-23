@@ -20,7 +20,6 @@ use tui::{
 };
 
 use crate::generation::*;
-use crate::patterns::*;
 
 
 pub struct StatefulList<T> {

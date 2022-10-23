@@ -2,8 +2,6 @@
 
 use std::error::Error;
 mod generation;
-mod patterns;
-use patterns::*;
 use generation::*;
 mod ui;
 use ui::*;
