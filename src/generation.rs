@@ -17,7 +17,7 @@ use std::{
     error::Error,
     fs::File,
     io::{self, BufRead, BufReader, Write},
-    path::Path,
+    path::PathBuf,
     thread::sleep,
     time::Duration,
 };
@@ -159,7 +159,7 @@ pub fn next_gen(app: &mut App) -> Gen {
     nxt_gen
 }
 
-pub fn gen_from_file(path: &Path) -> Gen {
+pub fn gen_from_file(path: &PathBuf) -> Gen {
     let mut gen = Gen::new();
     let file = File::open(path).expect("File not found");
     let reader = BufReader::new(file);
