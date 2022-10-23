@@ -16,7 +16,7 @@ cargo run --release
 
 #TODOs
 - [x] Add a lot of unique patterns
-- []  Add current generation number
-- [] Add full screen mode without the left bar
+- [ ] Add current generation number
+- [ ] Add full screen mode without the left bar
 
 
