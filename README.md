@@ -17,9 +17,13 @@ cd gof-rs
 cargo run --release
 ```
 
+# Install
+```
+cargo install gof-rs
+```
+
 # TODOs
 - [x] Add a lot of unique patterns.
-- [ ] Add all of the patterns to some sort of database.
 - [ ] Add current generation number.
 - [ ] Add full screen mode without the left bar.
 
