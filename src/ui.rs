@@ -20,6 +20,7 @@ use tui::{
 };
 
 use crate::generation::*;
+use crate::patterns::*;
 
 
 pub struct StatefulList<T> {
@@ -79,8 +80,6 @@ pub struct App<'a> {
     pub flag_cur: bool,
     pub layout: Layout,
     pub cur_gen: Gen,
-    pub nxt_gen: Gen,
-    // generation: Gen,
 }
 
 impl<'a> App<'a> {
@@ -2651,7 +2650,6 @@ impl<'a> App<'a> {
                 .direction(Direction::Horizontal)
                 .constraints([Constraint::Percentage(15), Constraint::Percentage(85)].as_ref()),
             cur_gen: Gen::new(),
-            nxt_gen: Gen::new(),
         }
     }
 }
@@ -2659,14 +2657,12 @@ impl<'a> App<'a> {
 pub fn run_app<B: Backend>(
     terminal: &mut Terminal<B>,
     mut app: App,
-    tick_rate: Duration,
 ) -> io::Result<()> {
     let mut last_tick = Instant::now();
     let mut item_cnt = 1;
     loop {
         terminal.draw(|f| ui_list(f, &mut app))?;
-
-        let timeout = Duration::from_millis(10);
+        let timeout = Duration::from_millis(32);
         if crossterm::event::poll(timeout)? {
             if let Event::Key(key) = event::read()? {
                 match key.code {
@@ -2698,7 +2694,7 @@ pub fn run_app<B: Backend>(
                     }
                     KeyCode::Char('a') => 'animate: loop {
                         terminal.draw(|f| ui_game(f, &mut app))?;
-                        sleep(Duration::from_millis(16));
+                        sleep(Duration::from_millis(32));
                         if (crossterm::event::poll(Duration::from_millis(1))).unwrap() {
                             if let Event::Key(k) = event::read().unwrap() {
                                 match k.code {
@@ -2729,37 +2725,21 @@ fn ui_list<B: Backend>(f: &mut Frame<B>, app: &mut App) {
         .collect();
 
     let items = List::new(items)
-        .block(Block::default().borders(Borders::ALL).title("List"))
+        .block(Block::default().borders(Borders::ALL).title("Cool Paterns"))
         .highlight_style(
             Style::default()
                 .bg(Color::White)
                 .add_modifier(Modifier::ITALIC),
         )
-        .highlight_symbol("> ");
+        .highlight_symbol("-> ");
 
     f.render_stateful_widget(items, chunks[0], &mut app.items.state);
 
     if !app.flag_cur {
         app.cur_gen = new_gen(&chunks[1], app);
-        // app.cur_gen = gen_from_file(Path::new("/home/pengu/test/rust-dev/gof-rs/presets/glider.txt"));
     }
     let spans = gen_to_spans(&app.cur_gen);
-
-    let create_block = |title| {
-        Block::default()
-            .borders(Borders::ALL)
-            .style(Style::default().bg(Color::Black).fg(Color::Red))
-            .title(Span::styled(
-                title,
-                Style::default().add_modifier(Modifier::BOLD),
-            ))
-            .title_alignment(Alignment::Center)
-    };
-    let paragraph = Paragraph::new(spans.clone())
-        .style(Style::default().bg(Color::Black).fg(Color::Blue))
-        .block(create_block(" Game Of Life "))
-        .alignment(Alignment::Center);
-    f.render_widget(paragraph, chunks[1]);
+    render_gen(f, chunks[1], &spans);
 }
 
 fn ui_game<B: Backend>(f: &mut Frame<B>, app: &mut App) {
@@ -2777,7 +2757,7 @@ fn ui_game<B: Backend>(f: &mut Frame<B>, app: &mut App) {
 
     // Create a List from all list items and highlight the currently selected one
     let items = List::new(items)
-        .block(Block::default().borders(Borders::ALL).title("List"))
+        .block(Block::default().borders(Borders::ALL).title("Cool Patterns"))
         .highlight_style(
             Style::default()
                 .bg(Color::Blue)
@@ -2785,25 +2765,10 @@ fn ui_game<B: Backend>(f: &mut Frame<B>, app: &mut App) {
         )
         .highlight_symbol("> ");
 
-    // We can now render the item list
     f.render_stateful_widget(items, chunks[0], &mut app.items.state);
+
 
     let nxt = next_gen(app);
     let spans = gen_to_spans(&nxt);
-
-    let create_block = |title| {
-        Block::default()
-            .borders(Borders::ALL)
-            .style(Style::default().bg(Color::Black).fg(Color::Red))
-            .title(Span::styled(
-                title,
-                Style::default().add_modifier(Modifier::BOLD),
-            ))
-            .title_alignment(Alignment::Center)
-    };
-    let paragraph = Paragraph::new(spans.clone())
-        .style(Style::default().bg(Color::Black).fg(Color::Blue))
-        .block(create_block(" Game Of Life "))
-        .alignment(Alignment::Center);
-    f.render_widget(paragraph, chunks[1]);
+    render_gen(f, chunks[1], &spans)
 }

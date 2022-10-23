@@ -38,24 +38,29 @@ pub enum Cell {
     Dead,
 }
 
-pub fn render_gen(chunk: &Rect, gen: &Gen) {
-    for i in 0..chunk.height as usize {
-        for j in 0..chunk.width as usize {
-            match gen[i][j] {
-                // Cell::Alive => print!("😎"),
-                // Cell::Alive => print!("🦀"),
-                Cell::Alive => print!("{}", "X".color("blue")),
-                Cell::Dead => print!("{}", "-".color("red")),
-            }
-        }
-    }
+pub fn render_gen<B: Backend>(f: &mut Frame<B>, chunk: Rect, spans: &Vec<Spans>) {
+    let create_block = |title| {
+        Block::default()
+            .borders(Borders::ALL)
+            .style(Style::default().bg(Color::Black).fg(Color::Red))
+            .title(Span::styled(
+                title,
+                Style::default().add_modifier(Modifier::BOLD),
+            ))
+            .title_alignment(Alignment::Center)
+    };
+    let paragraph = Paragraph::new(spans.clone())
+        .style(Style::default().bg(Color::Black).fg(Color::Blue))
+        .block(create_block(" Conway's Game-Of-Life "))
+        .alignment(Alignment::Center);
+    f.render_widget(paragraph, chunk);
 }
 
 pub fn new_gen(chunk: &Rect, app: &mut App) -> Gen {
     app.flag_cur = true;
     let cells = vec![Cell::Dead, Cell::Dead, Cell::Alive, Cell::Dead, Cell::Alive];
-    let cols: u16 = chunk.width - 90;
-    let rows: u16 = chunk.height - 2;
+    let cols: u16 = 72;
+    let rows: u16 = 42;
     let mut grid: Vec<Vec<Cell>> = Vec::new();
     for _ in 0..rows {
         let mut row: Vec<Cell> = Vec::new();
@@ -70,19 +75,18 @@ pub fn new_gen(chunk: &Rect, app: &mut App) -> Gen {
 
 pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
     let mut spans = vec![];
-    let alive_cells = vec!["🟥", "🟧", "🟨", "🟩", "🟦", "🟪", "🟫"];
+    let alive_cells = vec!["🟥", "🟦", "🟨", "🟪", "🟧", "🟩", "🟫"];
     for i in 0..gen.len() {
         let mut txt = String::new();
         for j in 0..gen[0].len() {
             let rand = thread_rng().gen_range(0..10);
             match gen[i][j] {
+                // Cell::Alive => txt.push_str(alive_cells[rand % alive_cells.len()]),
+                Cell::Alive => txt.push_str("⬜"),
+                // Cell::Dead => txt.push_str("⬛️"),
+                Cell::Dead => txt.push_str("  "),
                 // Cell::Alive => print!("😎"),
                 // Cell::Alive => txt.push_str("🦀"),
-                // Cell::Alive => txt.push_str(alive_cells[rand % alive_cells.len()]),
-                Cell::Alive => txt.push_str(alive_cells[0]),
-                Cell::Dead => txt.push_str("⬛️"),
-                // Cell::Alive => txt.push('X'),
-                // Cell::Dead => txt.push('-'),
             }
         }
         spans.push(Spans::from(txt));
@@ -186,7 +190,7 @@ pub fn init() -> Result<(), Box<dyn Error>> {
     // create app and run it
     let tick_rate = Duration::from_millis(250);
     let app = App::new();
-    let res = run_app(&mut terminal, app, tick_rate);
+    let res = run_app(&mut terminal, app);
 
     // restore terminal
     disable_raw_mode()?;
