@@ -159,13 +159,13 @@ pub fn next_gen(app: &mut App) -> Gen {
     nxt_gen
 }
 
-pub fn gen_from_file(path: &PathBuf) -> Gen {
+pub fn gen_from_file(s : &String) -> Gen {
     let mut gen = Gen::new();
-    let file = File::open(path).expect("File not found");
-    let reader = BufReader::new(file);
+    // let file = File::open(path).expect("File not found");
+    // let reader = BufReader::new(file);
 
-    for line in reader.lines() {
-        let line = line.unwrap();
+    for line in s.lines() {
+        let line = line;
         let mut row: Vec<Cell> = vec![];
         for ch in line.chars() {
             if ch == '.' {

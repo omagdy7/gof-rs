@@ -18,8 +18,11 @@ use tui::{
     widgets::{Block, Borders, List, ListItem, ListState, Paragraph},
     Frame, Terminal,
 };
+use include_dir::{include_dir, Dir};
 
 use crate::generation::*;
+
+static PRESETS_DIR : Dir<'_> = include_dir!("$CARGO_MANIFEST_DIR/presets/patterns/");
 
 pub struct StatefulList<T> {
     state: ListState,
@@ -74,7 +77,7 @@ impl<T> StatefulList<T> {
 /// Check the event handling at the bottom to see how to change the state on incoming events.
 /// Check the drawing logic for items on how to specify the highlighting style for selected items.
 pub struct App {
-    pub items: StatefulList<(String, PathBuf)>,
+    pub items: StatefulList<(String, String)>,
     pub flag_cur: bool,
     pub layout: Layout,
     pub cur_gen: Gen,
@@ -82,29 +85,18 @@ pub struct App {
 
 impl App {
     pub fn new() -> App {
-        fn read_presets() -> io::Result<Vec<(String, PathBuf)>> {
+        fn read_presets() -> Vec<(String, String)> {
             let mut result = Vec::new();
-            for path in std::fs::read_dir("./presets/patterns")? {
-                let path = path?.path();
-                if !path.is_file() {
-                    continue;
-                }
-                if let Some(file_name) = path.file_name() {
-                    let file_name = file_name.to_string_lossy();
-                    if file_name.starts_with("pattern") && file_name.ends_with(".txt") {
-                        result.push((file_name.trim_end_matches(".txt").to_owned(), path));
-                    }
-                }
+            for i in 1..=513 {
+                let file_name = format!("pattern{}.txt", i);
+                let file = PRESETS_DIR.get_file(file_name.to_owned()).unwrap();
+                let body = file.contents_utf8().unwrap().to_owned();
+                result.push((file_name, body));
             }
-            result.sort_by_key(|(name, _)| {
-                name.trim_start_matches("pattern")
-                    .parse::<u32>()
-                    .unwrap_or(0)
-            });
-            Ok(result)
+            result
         }
         App {
-            items: StatefulList::with_items(read_presets().unwrap_or_else(|_| Vec::new())),
+            items: StatefulList::with_items(read_presets()),
             flag_cur: false,
             layout: Layout::default()
                 .direction(Direction::Horizontal)
