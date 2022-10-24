@@ -16,6 +16,9 @@ git clone https://github.com/omagdy7/gof-rs
 cd gof-rs
 cargo run --release
 ```
+# Disclaimer
+- Your terminal has to support emojis(for example: kitty, gnome terminal)
+- Your terminal font has to be using a flavour of nerd font(for example: JetBrains Mono Nerd font)
 
 # Install
 ```
