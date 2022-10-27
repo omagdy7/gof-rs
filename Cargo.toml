@@ -1,6 +1,6 @@
 [package]
 name = "gof-rs"
-version = "0.2.2"
+version = "0.2.3"
 license = "MIT"
 authors = ["Omar Magdy <omar.professional8777@gmai.com>"]
 description = "Game of life in your terminal with over 500 unique patterns to choose from."
