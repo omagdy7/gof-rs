@@ -27,7 +27,8 @@ cargo install gof-rs
 
 # TODOs
 - [x] Add a lot of unique patterns.
+- [x] Add full screen mode without the left bar.
 - [ ] Add current generation number.
-- [ ] Add full screen mode without the left bar.
+- [ ] Make the animation speed adjustable
 
 

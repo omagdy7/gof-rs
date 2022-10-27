@@ -1,32 +1,17 @@
-#![allow(unused_imports, unused_variables, unused_mut)]
-
 use crate::ui::*;
-use colored::Colorize;
 use crossterm::{
-    cursor::{Hide, MoveTo, Show},
-    event::{poll, Event, KeyCode, KeyEvent},
     event::{DisableMouseCapture, EnableMouseCapture},
     execute,
-    style::Stylize,
-    terminal,
     terminal::{disable_raw_mode, enable_raw_mode, EnterAlternateScreen, LeaveAlternateScreen},
 };
 use rand::{thread_rng, Rng};
-use std::{
-    env,
-    error::Error,
-    fs::File,
-    io::{self, BufRead, BufReader, Write},
-    path::PathBuf,
-    thread::sleep,
-    time::Duration,
-};
+use std::{error::Error, io};
 use tui::{
     backend::{Backend, CrosstermBackend},
-    layout::{Alignment, Constraint, Corner, Direction, Layout, Rect},
+    layout::{Alignment, Rect},
     style::{Color, Modifier, Style},
     text::{Span, Spans},
-    widgets::{Block, Borders, List, ListItem, ListState, Paragraph},
+    widgets::{Block, Borders, Paragraph},
     Frame, Terminal,
 };
 
@@ -56,11 +41,11 @@ pub fn render_gen<B: Backend>(f: &mut Frame<B>, chunk: Rect, spans: &Vec<Spans>)
     f.render_widget(paragraph, chunk);
 }
 
-pub fn new_gen(chunk: &Rect, app: &mut App) -> Gen {
+pub fn new_gen(app: &mut App) -> Gen {
     app.flag_cur = true;
     let cells = vec![Cell::Dead, Cell::Dead, Cell::Alive, Cell::Dead, Cell::Alive];
     let cols: u16 = 72;
-    let rows: u16 = 42;
+    let rows: u16 = 44;
     let mut grid: Vec<Vec<Cell>> = Vec::new();
     for _ in 0..rows {
         let mut row: Vec<Cell> = Vec::new();
@@ -75,11 +60,10 @@ pub fn new_gen(chunk: &Rect, app: &mut App) -> Gen {
 
 pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
     let mut spans = vec![];
-    let alive_cells = vec!["🟥", "🟦", "🟨", "🟪", "🟧", "🟩", "🟫"];
+    // let alive_cells = vec!["🟥", "🟦", "🟨", "🟪", "🟧", "🟩", "🟫"];
     for i in 0..gen.len() {
         let mut txt = String::new();
         for j in 0..gen[0].len() {
-            let rand = thread_rng().gen_range(0..10);
             match gen[i][j] {
                 // Cell::Alive => txt.push_str(alive_cells[rand % alive_cells.len()]),
                 Cell::Alive => txt.push_str("⬜"),
@@ -159,11 +143,8 @@ pub fn next_gen(app: &mut App) -> Gen {
     nxt_gen
 }
 
-pub fn gen_from_file(s : &String) -> Gen {
+pub fn gen_from_file(s: &String) -> Gen {
     let mut gen = Gen::new();
-    // let file = File::open(path).expect("File not found");
-    // let reader = BufReader::new(file);
-
     for line in s.lines() {
         let line = line;
         let mut row: Vec<Cell> = vec![];
@@ -188,7 +169,6 @@ pub fn init() -> Result<(), Box<dyn Error>> {
     let mut terminal = Terminal::new(backend)?;
 
     // create app and run it
-    let tick_rate = Duration::from_millis(250);
     let app = App::new();
     let res = run_app(&mut terminal, app);
 

@@ -1,29 +1,21 @@
-use crossterm::{
-    event::{self, DisableMouseCapture, EnableMouseCapture, Event, KeyCode},
-    execute,
-    terminal::{disable_raw_mode, enable_raw_mode, EnterAlternateScreen, LeaveAlternateScreen},
-};
-use std::{
-    error::Error,
-    io,
-    path::{Path, PathBuf},
-    thread::sleep,
-    time::{Duration, Instant},
-};
+use crate::generation::*;
+use crossterm::event::{self, Event, KeyCode};
+use include_dir::{include_dir, Dir};
+use std::{io, thread::sleep, time::Duration};
 use tui::{
-    backend::{Backend, CrosstermBackend},
-    layout::{Alignment, Constraint, Corner, Direction, Layout, Rect},
+    backend::Backend,
+    layout::{Constraint, Direction, Layout},
     style::{Color, Modifier, Style},
-    text::{Span, Spans},
-    widgets::{Block, Borders, List, ListItem, ListState, Paragraph},
+    text::Spans,
+    widgets::{Block, Borders, List, ListItem, ListState},
     Frame, Terminal,
 };
-use include_dir::{include_dir, Dir};
 
-use crate::generation::*;
+// for including the patterns dir in compile time
+static PRESETS_DIR: Dir<'_> = include_dir!("$CARGO_MANIFEST_DIR/presets/patterns/");
 
-static PRESETS_DIR : Dir<'_> = include_dir!("$CARGO_MANIFEST_DIR/presets/patterns/");
 
+// struct that holds all the information in the left side bar
 pub struct StatefulList<T> {
     state: ListState,
     items: Vec<T>,
@@ -85,6 +77,7 @@ pub struct App {
 
 impl App {
     pub fn new() -> App {
+        // read the patterns from the files and load it in a vector 
         fn read_presets() -> Vec<(String, String)> {
             let mut result = Vec::new();
             for i in 1..=513 {
@@ -100,14 +93,14 @@ impl App {
             flag_cur: false,
             layout: Layout::default()
                 .direction(Direction::Horizontal)
-                .constraints([Constraint::Percentage(15), Constraint::Percentage(85)].as_ref()),
+                .constraints([Constraint::Percentage(12), Constraint::Percentage(90)].as_ref()),
             cur_gen: Gen::new(),
         }
     }
 }
 
+// gameloop and event handling
 pub fn run_app<B: Backend>(terminal: &mut Terminal<B>, mut app: App) -> io::Result<()> {
-    let mut last_tick = Instant::now();
     let mut item_cnt = 1;
     loop {
         terminal.draw(|f| ui_list(f, &mut app))?;
@@ -115,7 +108,7 @@ pub fn run_app<B: Backend>(terminal: &mut Terminal<B>, mut app: App) -> io::Resu
         if crossterm::event::poll(timeout)? {
             if let Event::Key(key) = event::read()? {
                 match key.code {
-                    KeyCode::Char('q') => return Ok(()),
+                    KeyCode::Char('q') | KeyCode::Esc => return Ok(()),
                     KeyCode::Left | KeyCode::Char('h') => app.items.unselect(),
                     KeyCode::Down | KeyCode::Char('j') => {
                         if item_cnt >= app.items.items.len() - 1 {
@@ -139,12 +132,20 @@ pub fn run_app<B: Backend>(terminal: &mut Terminal<B>, mut app: App) -> io::Resu
                         terminal.draw(|f| ui_game(f, &mut app))?;
                     }
                     KeyCode::Char('a') => 'animate: loop {
+                        app.layout = Layout::default()
+                                    .direction(Direction::Horizontal)
+                                    .constraints([Constraint::Percentage(0), Constraint::Percentage(100)].as_ref());
                         terminal.draw(|f| ui_game(f, &mut app))?;
                         sleep(Duration::from_millis(32));
                         if (crossterm::event::poll(Duration::from_millis(1))).unwrap() {
                             if let Event::Key(k) = event::read().unwrap() {
                                 match k.code {
-                                    KeyCode::Char('s') => break 'animate,
+                                    KeyCode::Char('s') =>{
+                                        break 'animate
+                                    app.layout = Layout::default()
+                                                .direction(Direction::Horizontal)
+                                                .constraints([Constraint::Percentage(12), Constraint::Percentage(90)].as_ref());
+                                    } 
                                     _ => {}
                                 }
                             }
@@ -182,7 +183,7 @@ fn ui_list<B: Backend>(f: &mut Frame<B>, app: &mut App) {
     f.render_stateful_widget(items, chunks[0], &mut app.items.state);
 
     if !app.flag_cur {
-        app.cur_gen = new_gen(&chunks[1], app);
+        app.cur_gen = new_gen(app);
     }
     let spans = gen_to_spans(&app.cur_gen);
     render_gen(f, chunks[1], &spans);
