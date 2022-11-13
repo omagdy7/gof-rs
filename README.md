@@ -30,5 +30,7 @@ cargo install gof-rs
 - [x] Add full screen mode without the left bar.
 - [ ] Add current generation number.
 - [ ] Make the animation speed adjustable
+- [ ] Make the animation repeatable if all generation dies out
+
 
 
