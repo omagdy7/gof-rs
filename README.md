@@ -29,6 +29,7 @@ cargo install gof-rs
 - [x] Add a lot of unique patterns.
 - [x] Add full screen mode without the left bar.
 - [ ] Add current generation number.
+- [ ] Make the UI Responsive when terminal is resized
 - [ ] Make the animation speed adjustable
 - [ ] Make the animation repeatable if all generation dies out
 
