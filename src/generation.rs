@@ -5,15 +5,15 @@ use crossterm::{
     terminal::{disable_raw_mode, enable_raw_mode, EnterAlternateScreen, LeaveAlternateScreen},
 };
 use rand::{thread_rng, Rng};
-use std::{error::Error, io};
-use tui::{
-    backend::{Backend, CrosstermBackend},
+use ratatui::{
+    backend::CrosstermBackend,
     layout::{Alignment, Rect},
     style::{Color, Modifier, Style},
-    text::{Span, Spans},
+    text::{Line, Span},
     widgets::{Block, Borders, Paragraph},
     Frame, Terminal,
 };
+use std::{error::Error, io};
 
 pub type Gen = Vec<Vec<Cell>>;
 
@@ -23,11 +23,11 @@ pub enum Cell {
     Dead,
 }
 
-pub fn render_gen<B: Backend>(f: &mut Frame<B>, chunk: Rect, spans: &Vec<Spans>) {
+pub fn render_gen(f: &mut Frame, chunk: Rect, spans: &Vec<Line>) {
     let create_block = |title| {
         Block::default()
             .borders(Borders::ALL)
-            .style(Style::default().bg(Color::Black).fg(Color::Red))
+            .style(Style::default().bg(Color::Reset).fg(Color::Red))
             .title(Span::styled(
                 title,
                 Style::default().add_modifier(Modifier::BOLD),
@@ -35,7 +35,7 @@ pub fn render_gen<B: Backend>(f: &mut Frame<B>, chunk: Rect, spans: &Vec<Spans>)
             .title_alignment(Alignment::Center)
     };
     let paragraph = Paragraph::new(spans.clone())
-        .style(Style::default().bg(Color::Black).fg(Color::Blue))
+        .style(Style::default().bg(Color::Reset).fg(Color::Blue))
         .block(create_block(" Conway's Game-Of-Life "))
         .alignment(Alignment::Center);
     f.render_widget(paragraph, chunk);
@@ -58,22 +58,17 @@ pub fn new_gen(app: &mut App) -> Gen {
     grid
 }
 
-pub fn gen_to_spans(gen: &Gen) -> Vec<Spans> {
+pub fn gen_to_spans(gen: &Gen) -> Vec<Line> {
     let mut spans = vec![];
-    // let alive_cells = vec!["🟥", "🟦", "🟨", "🟪", "🟧", "🟩", "🟫"];
     for i in 0..gen.len() {
         let mut txt = String::new();
         for j in 0..gen[0].len() {
             match gen[i][j] {
-                // Cell::Alive => txt.push_str(alive_cells[rand % alive_cells.len()]),
                 Cell::Alive => txt.push_str("⬜"),
-                // Cell::Dead => txt.push_str("⬛️"),
                 Cell::Dead => txt.push_str("  "),
-                // Cell::Alive => print!("😎"),
-                // Cell::Alive => txt.push_str("🦀"),
             }
         }
-        spans.push(Spans::from(txt));
+        spans.push(Line::from(txt));
     }
     spans
 }

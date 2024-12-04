@@ -1,19 +1,18 @@
 use crate::generation::*;
 use crossterm::event::{self, Event, KeyCode};
 use include_dir::{include_dir, Dir};
-use std::{io, thread::sleep, time::Duration};
-use tui::{
+use ratatui::{
     backend::Backend,
     layout::{Constraint, Direction, Layout},
     style::{Color, Modifier, Style},
-    text::Spans,
+    text::Line,
     widgets::{Block, Borders, List, ListItem, ListState},
     Frame, Terminal,
 };
+use std::{io, thread::sleep, time::Duration};
 
 // for including the patterns dir in compile time
 static PRESETS_DIR: Dir<'_> = include_dir!("$CARGO_MANIFEST_DIR/presets/patterns/");
-
 
 // struct that holds all the information in the left side bar
 pub struct StatefulList<T> {
@@ -77,7 +76,7 @@ pub struct App {
 
 impl App {
     pub fn new() -> App {
-        // read the patterns from the files and load it in a vector 
+        // read the patterns from the files and load it in a vector
         fn read_presets() -> Vec<(String, String)> {
             let mut result = Vec::new();
             for i in 1..=513 {
@@ -133,19 +132,26 @@ pub fn run_app<B: Backend>(terminal: &mut Terminal<B>, mut app: App) -> io::Resu
                     }
                     KeyCode::Char('a') => 'animate: loop {
                         app.layout = Layout::default()
-                                    .direction(Direction::Horizontal)
-                                    .constraints([Constraint::Percentage(0), Constraint::Percentage(100)].as_ref());
+                            .direction(Direction::Horizontal)
+                            .constraints(
+                                [Constraint::Percentage(0), Constraint::Percentage(100)].as_ref(),
+                            );
                         terminal.draw(|f| ui_game(f, &mut app))?;
                         sleep(Duration::from_millis(32));
                         if (crossterm::event::poll(Duration::from_millis(1))).unwrap() {
                             if let Event::Key(k) = event::read().unwrap() {
                                 match k.code {
-                                    KeyCode::Char('s') =>{
-                                        break 'animate
-                                    app.layout = Layout::default()
-                                                .direction(Direction::Horizontal)
-                                                .constraints([Constraint::Percentage(12), Constraint::Percentage(90)].as_ref());
-                                    } 
+                                    KeyCode::Char('s') => {
+                                        break 'animate app.layout = Layout::default()
+                                            .direction(Direction::Horizontal)
+                                            .constraints(
+                                                [
+                                                    Constraint::Percentage(12),
+                                                    Constraint::Percentage(90),
+                                                ]
+                                                .as_ref(),
+                                            );
+                                    }
                                     _ => {}
                                 }
                             }
@@ -158,16 +164,16 @@ pub fn run_app<B: Backend>(terminal: &mut Terminal<B>, mut app: App) -> io::Resu
     }
 }
 
-fn ui_list<B: Backend>(f: &mut Frame<B>, app: &mut App) {
-    let chunks = app.layout.split(f.size());
+fn ui_list(f: &mut Frame, app: &mut App) {
+    let chunks = app.layout.split(f.area());
 
     let items: Vec<ListItem> = app
         .items
         .items
         .iter()
         .map(|i| {
-            let lines = vec![Spans::from(i.0.as_str())];
-            ListItem::new(lines).style(Style::default().fg(Color::Red).bg(Color::Black))
+            let lines = vec![Line::from(i.0.as_str())];
+            ListItem::new(lines).style(Style::default().fg(Color::Red).bg(Color::Reset))
         })
         .collect();
 
@@ -189,15 +195,15 @@ fn ui_list<B: Backend>(f: &mut Frame<B>, app: &mut App) {
     render_gen(f, chunks[1], &spans);
 }
 
-fn ui_game<B: Backend>(f: &mut Frame<B>, app: &mut App) {
-    let chunks = app.layout.split(f.size());
+fn ui_game(f: &mut Frame, app: &mut App) {
+    let chunks = app.layout.split(f.area());
 
     let items: Vec<ListItem> = app
         .items
         .items
         .iter()
         .map(|i| {
-            let lines = vec![Spans::from(i.0.as_str())];
+            let lines = vec![Line::from(i.0.as_str())];
             ListItem::new(lines).style(Style::default().fg(Color::Red).bg(Color::Black))
         })
         .collect();
