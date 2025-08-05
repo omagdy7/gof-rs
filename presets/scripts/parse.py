@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-with open("/home/pengu/test/rust-dev/gof-rs/presets/patterns-striped.txt", "r") as file:
+with open("/home/omar/programming/rust-dev/gof-rs/presets/patterns-striped.txt", "r") as file:
     with open("./new.txt", "w") as newfile:
         cnt = 0
         for line in file.readlines():

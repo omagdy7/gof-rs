@@ -1,0 +1,6732 @@
+[
+    {
+        "name": "0hd Demonoid",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "101",
+        "pattern": "....**......**....",
+        "discoverer": "Achim Flammenkamp"
+    },
+    {
+        "name": "10hd Demonoid",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "119P4H1V0",
+        "pattern": ".................................*.",
+        "discoverer": null
+    },
+    {
+        "name": "1-2-3",
+        "pattern": "..**......",
+        "discoverer": null
+    },
+    {
+        "name": "1-2-3-4",
+        "pattern": ".....*.....",
+        "discoverer": null
+    },
+    {
+        "name": "135-degree MWSS-to-G",
+        "pattern": "......**......",
+        "discoverer": null
+    },
+    {
+        "name": "14-ner",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "17c/45 spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "180-degree kickback",
+        "pattern": ".*.",
+        "discoverer": null
+    },
+    {
+        "name": "1G seed",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "(2,1)c/6 spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "(23,5)c/79 Herschel climber",
+        "pattern": "...............*.*...............*..",
+        "discoverer": null
+    },
+    {
+        "name": "24-cell quadratic growth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "25-cell quadratic growth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "26-cell quadratic growth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "295P5H1V1",
+        "pattern": ".............**.....................................",
+        "discoverer": null
+    },
+    {
+        "name": "2c/3",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "2c/3 wire",
+        "pattern": "......*..*.......................................",
+        "discoverer": null
+    },
+    {
+        "name": "2c/5 spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "2c/7 spaceship",
+        "pattern": null,
+        "discoverer": "David Eppstein"
+    },
+    {
+        "name": "2 eaters",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "2-engine Cordership",
+        "pattern": "............*............................",
+        "discoverer": null
+    },
+    {
+        "name": "2-glider collision",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "2-glider mess",
+        "pattern": "..*.........",
+        "discoverer": null
+    },
+    {
+        "name": "30P5H2V0",
+        "pattern": "....*........",
+        "discoverer": null
+    },
+    {
+        "name": "31c/240",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "31c/240 Herschel-pair climber",
+        "pattern": "**.........................................................**",
+        "discoverer": null
+    },
+    {
+        "name": "3c/7 spaceship",
+        "pattern": null,
+        "discoverer": "Tim Coe"
+    },
+    {
+        "name": "3-engine Cordership",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "44P5H2V0",
+        "pattern": "....*.....*....",
+        "discoverer": null
+    },
+    {
+        "name": "45-degree LWSS-to-G",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "45-degree MWSS-to-G",
+        "pattern": ".........*.**....*.....",
+        "discoverer": null
+    },
+    {
+        "name": "4-8-12 diamond",
+        "pattern": "....****....",
+        "discoverer": null
+    },
+    {
+        "name": "4 boats",
+        "pattern": "...*....",
+        "discoverer": null
+    },
+    {
+        "name": "4F",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "4g-to-5g reaction",
+        "pattern": "*.*..........................................",
+        "discoverer": "Dieter Leithner"
+    },
+    {
+        "name": "56P6H1V0",
+        "pattern": ".....***..........***.....",
+        "discoverer": null
+    },
+    {
+        "name": "58P5H1V1",
+        "pattern": "....................**.",
+        "discoverer": null
+    },
+    {
+        "name": "5c/9 wire",
+        "pattern": "....*.**............................................",
+        "discoverer": null
+    },
+    {
+        "name": "60P312",
+        "pattern": "....................**....................",
+        "discoverer": null
+    },
+    {
+        "name": "60P5H2V0",
+        "pattern": ".....*.......*.....",
+        "discoverer": null
+    },
+    {
+        "name": "67P5H1V1",
+        "pattern": ".....***..............",
+        "discoverer": null
+    },
+    {
+        "name": "70P5H2V0",
+        "pattern": "..*............*..",
+        "discoverer": null
+    },
+    {
+        "name": "7x9 eater",
+        "pattern": ".*..........",
+        "discoverer": null
+    },
+    {
+        "name": "83P7H1V1",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "86P5H1V1",
+        "pattern": ".........***...........",
+        "discoverer": null
+    },
+    {
+        "name": "90-degree kickback",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "92P156",
+        "pattern": "....................**....................",
+        "discoverer": null
+    },
+    {
+        "name": "9hd",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "acorn",
+        "pattern": ".*.....",
+        "discoverer": null
+    },
+    {
+        "name": "A for all",
+        "pattern": "....**....",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "against the grain",
+        "pattern": "...*..*..*..*..*..*..*..*..*..*..*...",
+        "discoverer": "Hartmut Holzwart"
+    },
+    {
+        "name": "against-the-grain grey ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "agar",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "aircraft carrier",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "airforce",
+        "pattern": ".......*......",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "AK47 reaction",
+        "pattern": ".....*....",
+        "discoverer": "Paul Callahan"
+    },
+    {
+        "name": "AK94 gun",
+        "pattern": ".......*.......*.......**.............",
+        "discoverer": null
+    },
+    {
+        "name": "Al Jolson",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "almost knightship",
+        "pattern": "....***......",
+        "discoverer": null
+    },
+    {
+        "name": "almosymmetric",
+        "pattern": "....*....",
+        "discoverer": null
+    },
+    {
+        "name": "ambidextrous",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "anteater",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "antlers",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "ants",
+        "pattern": "**...**...**...**...**...**...**...**...**..",
+        "discoverer": null
+    },
+    {
+        "name": "antstretcher",
+        "pattern": "......................................................**.......",
+        "discoverer": null
+    },
+    {
+        "name": "anvil",
+        "pattern": ".****..",
+        "discoverer": null
+    },
+    {
+        "name": "apgluxe",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "apgmera",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "apgnano",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "apgsearch",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "APPS",
+        "pattern": null,
+        "discoverer": "Alan Hensel"
+    },
+    {
+        "name": "ark",
+        "pattern": "...........................*....",
+        "discoverer": null
+    },
+    {
+        "name": "arm",
+        "pattern": "............***............",
+        "discoverer": null
+    },
+    {
+        "name": "armless",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "ash",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "asynchronous",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "aVerage",
+        "pattern": "...**........",
+        "discoverer": null
+    },
+    {
+        "name": "B",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "B29",
+        "pattern": ".......***.......",
+        "discoverer": "Hartmut\n   Holzwart"
+    },
+    {
+        "name": "B-52 bomber",
+        "pattern": ".**....................................",
+        "discoverer": "Noam Elkies"
+    },
+    {
+        "name": "B60",
+        "pattern": "*...........**.....**",
+        "discoverer": null
+    },
+    {
+        "name": "babbling brook",
+        "pattern": ".......*........",
+        "discoverer": null
+    },
+    {
+        "name": "backrake",
+        "pattern": ".....***...........***.....",
+        "discoverer": null
+    },
+    {
+        "name": "backward glider",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bait",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "baker",
+        "pattern": "..............**",
+        "discoverer": null
+    },
+    {
+        "name": "bakery",
+        "pattern": "....**....",
+        "discoverer": null
+    },
+    {
+        "name": "banana spark",
+        "pattern": "..*....",
+        "discoverer": null
+    },
+    {
+        "name": "barberpole",
+        "pattern": null,
+        "discoverer": "the MIT group"
+    },
+    {
+        "name": "barberpole intersection",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "barbershop",
+        "pattern": "..........*.*.......",
+        "discoverer": null
+    },
+    {
+        "name": "barge",
+        "pattern": ".*..",
+        "discoverer": null
+    },
+    {
+        "name": "basic shuttle",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "beacon",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "beacon maker",
+        "pattern": "..............**",
+        "discoverer": null
+    },
+    {
+        "name": "beehive",
+        "pattern": ".**.",
+        "discoverer": null
+    },
+    {
+        "name": "beehive and dock",
+        "pattern": "...**.",
+        "discoverer": null
+    },
+    {
+        "name": "beehive on big table",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "beehive pusher",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "beehive stopper",
+        "pattern": ".*..........................",
+        "discoverer": null
+    },
+    {
+        "name": "beehive wire",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "beehive with tail",
+        "pattern": ".**...",
+        "discoverer": null
+    },
+    {
+        "name": "Bellman",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "belly spark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bent keys",
+        "pattern": ".*........*.",
+        "discoverer": null
+    },
+    {
+        "name": "BFx59H",
+        "pattern": ".**.....................",
+        "discoverer": null
+    },
+    {
+        "name": "B-heptomino",
+        "pattern": "*.**",
+        "discoverer": null
+    },
+    {
+        "name": "B-heptomino shuttle",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bi-block",
+        "pattern": "**.**",
+        "discoverer": null
+    },
+    {
+        "name": "bi-block fuse",
+        "pattern": "**..**..**..**..**..**..**..**..**..**..**..**.",
+        "discoverer": null
+    },
+    {
+        "name": "bi-block puffer",
+        "pattern": "...........*.*............**..............................",
+        "discoverer": null
+    },
+    {
+        "name": "bi-boat",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "biclock",
+        "pattern": "..*....",
+        "discoverer": null
+    },
+    {
+        "name": "big beacon",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "big fish",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "big glider",
+        "pattern": "...***............",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "big S",
+        "pattern": "....**.",
+        "discoverer": null
+    },
+    {
+        "name": "big table",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "billiard table",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "billiard table configuration",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bi-loaf",
+        "pattern": ".*.....",
+        "discoverer": null
+    },
+    {
+        "name": "bipole",
+        "pattern": "**...",
+        "discoverer": null
+    },
+    {
+        "name": "bi-pond",
+        "pattern": ".**....",
+        "discoverer": null
+    },
+    {
+        "name": "bi-ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bistable switch",
+        "pattern": "................................*........................",
+        "discoverer": "Paul Callahan"
+    },
+    {
+        "name": "bit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "biting off more than they can chew",
+        "pattern": "*...........",
+        "discoverer": null
+    },
+    {
+        "name": "blasting cap",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "blinker",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "blinker fuse",
+        "pattern": "....................................................*.",
+        "discoverer": null
+    },
+    {
+        "name": "blinker puffer",
+        "pattern": "...*.....",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "blinker pull",
+        "pattern": "***.",
+        "discoverer": null
+    },
+    {
+        "name": "blinkers bit pole",
+        "pattern": ".....**",
+        "discoverer": null
+    },
+    {
+        "name": "blinker ship",
+        "pattern": "..........****.............",
+        "discoverer": null
+    },
+    {
+        "name": "block",
+        "pattern": "**",
+        "discoverer": null
+    },
+    {
+        "name": "blockade",
+        "pattern": "**.....................",
+        "discoverer": null
+    },
+    {
+        "name": "block and dock",
+        "pattern": "...**.",
+        "discoverer": null
+    },
+    {
+        "name": "block and glider",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "blocker",
+        "pattern": "......*.*.",
+        "discoverer": null
+    },
+    {
+        "name": "block factory",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Blockic",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "block keeper",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "block-laying switch engine",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "block on big table",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "block on table",
+        "pattern": "..**",
+        "discoverer": null
+    },
+    {
+        "name": "block pull",
+        "pattern": "**.",
+        "discoverer": null
+    },
+    {
+        "name": "block pusher",
+        "pattern": "...................*.*",
+        "discoverer": null
+    },
+    {
+        "name": "blom",
+        "pattern": "*..........*",
+        "discoverer": null
+    },
+    {
+        "name": "blonk",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "blonker",
+        "pattern": "*..**....*..",
+        "discoverer": "Nicolay Beluchenko"
+    },
+    {
+        "name": "BLSE",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "BNE14T30",
+        "pattern": "...........**....",
+        "discoverer": null
+    },
+    {
+        "name": "boat",
+        "pattern": "**.",
+        "discoverer": null
+    },
+    {
+        "name": "boat-bit",
+        "pattern": "......*..................",
+        "discoverer": null
+    },
+    {
+        "name": "boat maker",
+        "pattern": "................**",
+        "discoverer": null
+    },
+    {
+        "name": "boat on boat",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "boat-ship-tie",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "boatstretcher",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "boat-tie",
+        "pattern": ".*....",
+        "discoverer": null
+    },
+    {
+        "name": "bobsled",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "boojum reflector",
+        "pattern": "....*.*......**.............................",
+        "discoverer": null
+    },
+    {
+        "name": "bookend",
+        "pattern": "..**",
+        "discoverer": null
+    },
+    {
+        "name": "bookends",
+        "pattern": "**...**",
+        "discoverer": null
+    },
+    {
+        "name": "boss",
+        "pattern": ".....*.....",
+        "discoverer": null
+    },
+    {
+        "name": "bottle",
+        "pattern": "....**......**....",
+        "discoverer": "Achim Flammenkamp"
+    },
+    {
+        "name": "bouncer",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bounding box",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bow tie",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "brain",
+        "pattern": ".***.........***.",
+        "discoverer": null
+    },
+    {
+        "name": "branching spaceship",
+        "pattern": ".....................*.................*......................",
+        "discoverer": null
+    },
+    {
+        "name": "breeder",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bridge",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "broken lines",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "broth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "BRx46B",
+        "pattern": "...........**",
+        "discoverer": null
+    },
+    {
+        "name": "BTC",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "B track",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "BTS",
+        "pattern": "..**...",
+        "discoverer": null
+    },
+    {
+        "name": "buckaroo",
+        "pattern": "..*.....................",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "bullet heptomino",
+        "pattern": ".*.",
+        "discoverer": null
+    },
+    {
+        "name": "bumper",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bun",
+        "pattern": ".**.",
+        "discoverer": null
+    },
+    {
+        "name": "bunnies",
+        "pattern": "*.....*.",
+        "discoverer": null
+    },
+    {
+        "name": "burloaf",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "burloaferimeter",
+        "pattern": "....**....",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "burn",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "bushing",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "butterfly",
+        "pattern": "*...",
+        "discoverer": null
+    },
+    {
+        "name": "Bx125",
+        "pattern": "...........................*..........",
+        "discoverer": null
+    },
+    {
+        "name": "Bx222",
+        "pattern": ".............*............................",
+        "discoverer": null
+    },
+    {
+        "name": "by flops",
+        "pattern": "...*..",
+        "discoverer": null
+    },
+    {
+        "name": "c",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "c/10 spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "c/12 spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "c/2 spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "c/3 spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "c/4 spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "c/5 spaceship",
+        "pattern": null,
+        "discoverer": "Tim Coe"
+    },
+    {
+        "name": "c/6 spaceship",
+        "pattern": "..*..............*..................................*.....",
+        "discoverer": "Paul Tooke"
+    },
+    {
+        "name": "c/7 spaceship",
+        "pattern": null,
+        "discoverer": "Matthias Merzenich"
+    },
+    {
+        "name": "CA",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "caber tosser",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Callahan G-to-H",
+        "pattern": "....*.........*...................",
+        "discoverer": null
+    },
+    {
+        "name": "Cambridge pulsar CP 48-56-72",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Canada goose",
+        "pattern": "***..........",
+        "discoverer": null
+    },
+    {
+        "name": "candelabra",
+        "pattern": "....**....**....",
+        "discoverer": null
+    },
+    {
+        "name": "candlefrobra",
+        "pattern": ".....*....",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "canoe",
+        "pattern": "...**",
+        "discoverer": null
+    },
+    {
+        "name": "cap",
+        "pattern": ".**.",
+        "discoverer": null
+    },
+    {
+        "name": "carnival shuttle",
+        "pattern": ".................................*...*",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "carrier",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "casing",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "catacryst",
+        "pattern": null,
+        "discoverer": "Nick Gotts"
+    },
+    {
+        "name": "Catagolue",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "catalyst",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "catch and throw",
+        "pattern": "..................................**.............**.......****.",
+        "discoverer": null
+    },
+    {
+        "name": "caterer",
+        "pattern": "..*.....",
+        "discoverer": null
+    },
+    {
+        "name": "Caterloopillar",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Caterpillar",
+        "pattern": "...............*",
+        "discoverer": null
+    },
+    {
+        "name": "CatForce",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Catherine wheel",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "cauldron",
+        "pattern": ".....*.....",
+        "discoverer": null
+    },
+    {
+        "name": "cavity",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "CC semi-cenark",
+        "pattern": ".*............**..........",
+        "discoverer": null
+    },
+    {
+        "name": "CC semi-Snark",
+        "pattern": "......*..........**",
+        "discoverer": null
+    },
+    {
+        "name": "cell",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "cellular automaton",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "census",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "centinal",
+        "pattern": "**................................................**",
+        "discoverer": null
+    },
+    {
+        "name": "Centipede",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "century",
+        "pattern": "..**",
+        "discoverer": null
+    },
+    {
+        "name": "century eater",
+        "pattern": "............*.**..............",
+        "discoverer": null
+    },
+    {
+        "name": "century-to-glider converter",
+        "pattern": "......................**.......",
+        "discoverer": null
+    },
+    {
+        "name": "channel",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "chaotic growth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "chemist",
+        "pattern": ".......*.......",
+        "discoverer": null
+    },
+    {
+        "name": "C-heptomino",
+        "pattern": ".***",
+        "discoverer": null
+    },
+    {
+        "name": "Cheshire cat",
+        "pattern": ".*..*.",
+        "discoverer": null
+    },
+    {
+        "name": "chicken wire",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "chirality",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "cigar",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "circuit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "cis-beacon on anvil",
+        "pattern": "...**..",
+        "discoverer": null
+    },
+    {
+        "name": "cis-beacon on table",
+        "pattern": "..**",
+        "discoverer": null
+    },
+    {
+        "name": "cis-boat with tail",
+        "pattern": ".*...",
+        "discoverer": null
+    },
+    {
+        "name": "cis fuse with two tails",
+        "pattern": "...*..",
+        "discoverer": null
+    },
+    {
+        "name": "cis-mirrored R-bee",
+        "pattern": ".**.**.",
+        "discoverer": null
+    },
+    {
+        "name": "cis snake",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "clean",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "clearance",
+        "pattern": ".*......**",
+        "discoverer": null
+    },
+    {
+        "name": "clock",
+        "pattern": "..*.",
+        "discoverer": null
+    },
+    {
+        "name": "clock II",
+        "pattern": "......**....",
+        "discoverer": null
+    },
+    {
+        "name": "clock inserter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "clock insertion",
+        "pattern": "..................................................*........",
+        "discoverer": null
+    },
+    {
+        "name": "cloud of smoke",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "cloverleaf",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "cluster",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "CNWH",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Coe ship",
+        "pattern": "....******",
+        "discoverer": null
+    },
+    {
+        "name": "colour",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "colour-changing",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "colour-changing semi-Snark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "colourised Life",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "colour of a glider",
+        "pattern": "***",
+        "discoverer": null
+    },
+    {
+        "name": "colour-preserving",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "colour-preserving semi-Snark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "complementary blinker",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "component",
+        "pattern": ".......*...................*...................*",
+        "discoverer": null
+    },
+    {
+        "name": "composite",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "composite conduit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "compression",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "computational universality",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "conduit",
+        "pattern": ".........**.*",
+        "discoverer": null
+    },
+    {
+        "name": "conduit 1",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "confused eaters",
+        "pattern": "*..........",
+        "discoverer": null
+    },
+    {
+        "name": "constellation",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "construction arm",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "construction elbow",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "construction envelope",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "construction lane",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "construction recipe",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "construction universality",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "converter",
+        "pattern": ".*.*..*........",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "convoy",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "copperhead",
+        "pattern": ".****.",
+        "discoverer": null
+    },
+    {
+        "name": "Corder-",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Corder engine",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Cordergun",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Cordership",
+        "pattern": "................................**.*...........................",
+        "discoverer": null
+    },
+    {
+        "name": "cousins",
+        "pattern": ".....*.**....",
+        "discoverer": null
+    },
+    {
+        "name": "cover",
+        "pattern": "....*",
+        "discoverer": null
+    },
+    {
+        "name": "covered table",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "cow",
+        "pattern": "**.......**..**..**..**..**..**..**..**..**..**..**..**.....",
+        "discoverer": null
+    },
+    {
+        "name": "CP pulsar",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "CP semi-cenark",
+        "pattern": ".*............**........",
+        "discoverer": null
+    },
+    {
+        "name": "CP semi-Snark",
+        "pattern": ".*............................",
+        "discoverer": "Tanner Jacobi"
+    },
+    {
+        "name": "crab",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "crane",
+        "pattern": ".**.................",
+        "discoverer": "Nicolay\n   Beluchenko"
+    },
+    {
+        "name": "cross",
+        "pattern": null,
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "crowd",
+        "pattern": "...........*..",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "crown",
+        "pattern": "..........*...........",
+        "discoverer": "Noam Elkies"
+    },
+    {
+        "name": "crucible",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "crystal",
+        "pattern": ".*......",
+        "discoverer": null
+    },
+    {
+        "name": "C-to-G",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "cuphook",
+        "pattern": "....**...",
+        "discoverer": null
+    },
+    {
+        "name": "curl",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "dart",
+        "pattern": ".......*.......",
+        "discoverer": null
+    },
+    {
+        "name": "dead spark coil",
+        "pattern": "**...**",
+        "discoverer": null
+    },
+    {
+        "name": "debris",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "de Bruijn diagram",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "de Bruijn graph",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Deep Cell",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Demonoid",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "demultiplexer",
+        "pattern": "...........................*.....",
+        "discoverer": "Brice Due"
+    },
+    {
+        "name": "demuxer",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "density",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "dependent conduit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "destructive read",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "destructor arm",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "D-heptomino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "diamond",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "diamond ring",
+        "pattern": "......*......",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "diehard",
+        "pattern": "......*.",
+        "discoverer": null
+    },
+    {
+        "name": "dinner table",
+        "pattern": ".*...........",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "dirty",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "diuresis",
+        "pattern": ".....**................**....",
+        "discoverer": "David Eppstein"
+    },
+    {
+        "name": "dock",
+        "pattern": ".****.",
+        "discoverer": null
+    },
+    {
+        "name": "domino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "dormant",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "do-see-do",
+        "pattern": ".....................................................*.*",
+        "discoverer": "David Bell"
+    },
+    {
+        "name": "double-barrelled",
+        "pattern": ".................*................................",
+        "discoverer": null
+    },
+    {
+        "name": "double block reaction",
+        "pattern": ".****.....**....",
+        "discoverer": null
+    },
+    {
+        "name": "double caterer",
+        "pattern": ".....**...*........",
+        "discoverer": null
+    },
+    {
+        "name": "double ewe",
+        "pattern": "......**............",
+        "discoverer": null
+    },
+    {
+        "name": "double wing",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "dove",
+        "pattern": ".**..",
+        "discoverer": null
+    },
+    {
+        "name": "down boat with tail",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "dr",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "dragon",
+        "pattern": ".............*..**......*..***",
+        "discoverer": null
+    },
+    {
+        "name": "drain trap",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "D read",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "dried",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "drifter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "dual 1-2-3-4",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "duoplet",
+        "pattern": "..*....................",
+        "discoverer": null
+    },
+    {
+        "name": "dying spark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "early universe",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "eater",
+        "pattern": ".*.............",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "eater1",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "eater2",
+        "pattern": "**.*...",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "eater3",
+        "pattern": ".........**.",
+        "discoverer": null
+    },
+    {
+        "name": "eater4",
+        "pattern": "...**.........",
+        "discoverer": null
+    },
+    {
+        "name": "eater5",
+        "pattern": ".*.........*.........*...........",
+        "discoverer": null
+    },
+    {
+        "name": "eater/block frob",
+        "pattern": ".**.......",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "eater-bound pond",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "eater-bound Z-hexomino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "eater eating eater",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "eater plug",
+        "pattern": ".......*",
+        "discoverer": null
+    },
+    {
+        "name": "eaters plus",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "ecologist",
+        "pattern": "****.....**........",
+        "discoverer": null
+    },
+    {
+        "name": "edge-repair spaceship",
+        "pattern": "..................................*.....",
+        "discoverer": "David Bell"
+    },
+    {
+        "name": "edge shooter",
+        "pattern": "**............**..*....**..**.............",
+        "discoverer": "Paul\n   Callahan"
+    },
+    {
+        "name": "edge spark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "edge sparker",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "edgy",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "egg",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "E-heptomino",
+        "pattern": ".***",
+        "discoverer": null
+    },
+    {
+        "name": "elbow",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "elbow ladder",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "elbow operation",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "electric fence",
+        "pattern": "..........*..................................................",
+        "discoverer": null
+    },
+    {
+        "name": "elementary",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "elementary conduit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "elevener",
+        "pattern": "**....",
+        "discoverer": null
+    },
+    {
+        "name": "emu",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "emulator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "engine",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "engineless",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "en retard",
+        "pattern": ".....*.....",
+        "discoverer": null
+    },
+    {
+        "name": "Enterprise",
+        "pattern": ".......***...........",
+        "discoverer": null
+    },
+    {
+        "name": "envelope",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Eureka",
+        "pattern": ".*..............*.",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "evolution",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "evolutionary factor",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "exhaust",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "exponential filter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "exposure",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "extensible",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "extra extra long",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "extra long",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "extremely impressive",
+        "pattern": "....**......",
+        "discoverer": null
+    },
+    {
+        "name": "extruder",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "F116",
+        "pattern": "........*..........................",
+        "discoverer": null
+    },
+    {
+        "name": "F117",
+        "pattern": "......................**.....................",
+        "discoverer": null
+    },
+    {
+        "name": "F166",
+        "pattern": ".................................**.....................",
+        "discoverer": null
+    },
+    {
+        "name": "F171",
+        "pattern": "..........*......................",
+        "discoverer": null
+    },
+    {
+        "name": "factory",
+        "pattern": ".......................**........................**",
+        "discoverer": null
+    },
+    {
+        "name": "familiar fours",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fanout",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Fast Forward Force Field",
+        "pattern": ".......*......*..",
+        "discoverer": "Dieter\n   Leithner"
+    },
+    {
+        "name": "fate",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "father",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fd",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "featherweight spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fencepost",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Fermat prime calculator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "F-heptomino",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "figure-8",
+        "pattern": "***...",
+        "discoverer": "Simon Norton"
+    },
+    {
+        "name": "filter",
+        "pattern": "..........****............",
+        "discoverer": null
+    },
+    {
+        "name": "filter stream",
+        "pattern": "................................*.............................",
+        "discoverer": null
+    },
+    {
+        "name": "finger",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fire",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fireship",
+        "pattern": "....**....",
+        "discoverer": null
+    },
+    {
+        "name": "fire-spitting",
+        "pattern": "...*......",
+        "discoverer": null
+    },
+    {
+        "name": "first natural glider",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fish",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fishhook",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fleet",
+        "pattern": "....**....",
+        "discoverer": null
+    },
+    {
+        "name": "flip-flop",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "flip-flops",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "flipper",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "flotilla",
+        "pattern": "....****.......",
+        "discoverer": null
+    },
+    {
+        "name": "fly",
+        "pattern": "..*...............................",
+        "discoverer": null
+    },
+    {
+        "name": "fly-by deletion",
+        "pattern": ".......................*.........",
+        "discoverer": null
+    },
+    {
+        "name": "flying machine",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "FNG",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fore and back",
+        "pattern": "**.**..",
+        "discoverer": null
+    },
+    {
+        "name": "forward glider",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fountain",
+        "pattern": ".........*.........",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "four skewed blocks",
+        "pattern": "...**.....",
+        "discoverer": null
+    },
+    {
+        "name": "fourteener",
+        "pattern": "....**.",
+        "discoverer": null
+    },
+    {
+        "name": "fox",
+        "pattern": "....*..",
+        "discoverer": null
+    },
+    {
+        "name": "freeze-dried",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "French kiss",
+        "pattern": "*.........",
+        "discoverer": null
+    },
+    {
+        "name": "frog II",
+        "pattern": "..**...**..",
+        "discoverer": null
+    },
+    {
+        "name": "frothing puffer",
+        "pattern": ".......*.................*.......",
+        "discoverer": "Paul Tooke"
+    },
+    {
+        "name": "frothing spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "frozen",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "full diagonal",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "fumarole",
+        "pattern": "...**...",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "fuse",
+        "pattern": ".........**......................**......................",
+        "discoverer": null
+    },
+    {
+        "name": "Fx119",
+        "pattern": "*......................",
+        "discoverer": null
+    },
+    {
+        "name": "Fx119 inserter",
+        "pattern": ".........*....................",
+        "discoverer": null
+    },
+    {
+        "name": "Fx153",
+        "pattern": ".........................**..........................",
+        "discoverer": null
+    },
+    {
+        "name": "Fx158",
+        "pattern": ".........*....**..............",
+        "discoverer": null
+    },
+    {
+        "name": "Fx176",
+        "pattern": "..............................**..................",
+        "discoverer": null
+    },
+    {
+        "name": "Fx77",
+        "pattern": ".*............................",
+        "discoverer": null
+    },
+    {
+        "name": "G4 receiver",
+        "pattern": "................................*.*.......................",
+        "discoverer": null
+    },
+    {
+        "name": "galaxy",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Game of Life",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Game of Life News",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Garden of Eden",
+        "pattern": "..*.***.....",
+        "discoverer": "Nicolay Beluchenko"
+    },
+    {
+        "name": "Gemini",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Gemini puffer",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Geminoid",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "generation",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "germ",
+        "pattern": "....**....",
+        "discoverer": null
+    },
+    {
+        "name": "gfind",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "ghost Herschel",
+        "pattern": "*..",
+        "discoverer": null
+    },
+    {
+        "name": "GIG",
+        "pattern": ".*...........................",
+        "discoverer": null
+    },
+    {
+        "name": "glasses",
+        "pattern": "....*........*....",
+        "discoverer": null
+    },
+    {
+        "name": "glider",
+        "pattern": "***",
+        "discoverer": "Richard Guy"
+    },
+    {
+        "name": "glider-block cycle",
+        "pattern": "...**...",
+        "discoverer": null
+    },
+    {
+        "name": "glider constructible",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "glider construction",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "glider duplicator",
+        "pattern": ".......*....**.......................**.........",
+        "discoverer": null
+    },
+    {
+        "name": "glider gun",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "glider injection gate",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "glider lane",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "gliderless",
+        "pattern": "......*.................................",
+        "discoverer": null
+    },
+    {
+        "name": "glider pair",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "glider-producing switch engine",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "glider pusher",
+        "pattern": ".........**..............",
+        "discoverer": "Dieter Leithner"
+    },
+    {
+        "name": "glider recipe",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "glider reflector",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "gliders by the dozen",
+        "pattern": "**..*",
+        "discoverer": null
+    },
+    {
+        "name": "glider stopper",
+        "pattern": ".*...........................................",
+        "discoverer": null
+    },
+    {
+        "name": "glider synthesis",
+        "pattern": "......*...",
+        "discoverer": "Tim Coe"
+    },
+    {
+        "name": "glider to 2 blocks",
+        "pattern": "..........*.......**",
+        "discoverer": null
+    },
+    {
+        "name": "glider to block",
+        "pattern": "...........*....",
+        "discoverer": null
+    },
+    {
+        "name": "glider turner",
+        "pattern": ".........**.........",
+        "discoverer": null
+    },
+    {
+        "name": "glide symmetric",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Gn",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "gnome",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "GoE",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "GoL",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Golly",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Gosper glider gun",
+        "pattern": "........................*...........",
+        "discoverer": "Bill Gosper"
+    },
+    {
+        "name": "Gotts dots",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "gourmet",
+        "pattern": "..........**........",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "gp",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "GPSE",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "grammar",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "grandfather",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "grandfatherless",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "grandparent",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Gray counter",
+        "pattern": "......*......",
+        "discoverer": null
+    },
+    {
+        "name": "gray ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "great on-off",
+        "pattern": "..**....",
+        "discoverer": null
+    },
+    {
+        "name": "grey counter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "grey ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "grin",
+        "pattern": "*..*",
+        "discoverer": null
+    },
+    {
+        "name": "grow-by-one object",
+        "pattern": "........**.......",
+        "discoverer": null
+    },
+    {
+        "name": "growing/shrinking line ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "growing spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "G-to-H",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "gull",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "gun",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "gunstar",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "gutter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "half-baked knightship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "half bakery",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "half-bakery reaction",
+        "pattern": ".............................*.",
+        "discoverer": null
+    },
+    {
+        "name": "half diagonal",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "half fleet",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Halfmax",
+        "pattern": null,
+        "discoverer": "Jason Summers"
+    },
+    {
+        "name": "hammer",
+        "pattern": "*..*................",
+        "discoverer": null
+    },
+    {
+        "name": "hammerhead",
+        "pattern": "................*..",
+        "discoverer": null
+    },
+    {
+        "name": "hand",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "handshake",
+        "pattern": "..**.",
+        "discoverer": null
+    },
+    {
+        "name": "harbor",
+        "pattern": ".....**...**.....",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "harvester",
+        "pattern": "................**",
+        "discoverer": null
+    },
+    {
+        "name": "hashlife",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "hassle",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "hassler",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "hat",
+        "pattern": "..*..",
+        "discoverer": null
+    },
+    {
+        "name": "HBK",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "hd",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "heat",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "heavyweight emulator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "heavyweight spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "heavyweight volcano",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "hebdarole",
+        "pattern": "...........**...........",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "hectic",
+        "pattern": "......................**...............",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "Heisenburp device",
+        "pattern": "*.....*....",
+        "discoverer": null
+    },
+    {
+        "name": "Heisenburp effect",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "helix",
+        "pattern": "...............................*.............",
+        "discoverer": null
+    },
+    {
+        "name": "heptaplet",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "heptapole",
+        "pattern": "**........",
+        "discoverer": null
+    },
+    {
+        "name": "heptomino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Herschel",
+        "pattern": "*..",
+        "discoverer": null
+    },
+    {
+        "name": "Herschel circuit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Herschel climber",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Herschel component",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Herschel conduit",
+        "pattern": "-----------------------------------------",
+        "discoverer": null
+    },
+    {
+        "name": "Herschel descendant",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "Herschel great-grandparent",
+        "pattern": ".**....",
+        "discoverer": null
+    },
+    {
+        "name": "Herschel loop",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Herschel-pair climber",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Herschel receiver",
+        "pattern": "...............................................*.*",
+        "discoverer": "Dave Buckingham way back"
+    },
+    {
+        "name": "Herschel stopper",
+        "pattern": "....................................**",
+        "discoverer": null
+    },
+    {
+        "name": "Herschel-to-glider",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Herschel track",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Herschel transceiver",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Herschel transmitter",
+        "pattern": "......**...........",
+        "discoverer": null
+    },
+    {
+        "name": "Hertz oscillator",
+        "pattern": "...**.*....",
+        "discoverer": null
+    },
+    {
+        "name": "hexadecimal",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "hexaplet",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "hexapole",
+        "pattern": "**.......",
+        "discoverer": null
+    },
+    {
+        "name": "hexomino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "HF",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "HFx58B",
+        "pattern": "..........*..............................*..........",
+        "discoverer": null
+    },
+    {
+        "name": "H-heptomino",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "high-bandwidth telegraph",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "high-clearance",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "highway robber",
+        "pattern": "......................*...........*.........",
+        "discoverer": null
+    },
+    {
+        "name": "hive",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "hivenudger",
+        "pattern": "****.....*..*",
+        "discoverer": "Hartmut\n   Holzwart"
+    },
+    {
+        "name": "honey bit",
+        "pattern": ".*...............",
+        "discoverer": null
+    },
+    {
+        "name": "honeycomb",
+        "pattern": "..**..",
+        "discoverer": null
+    },
+    {
+        "name": "honey farm",
+        "pattern": "......*......",
+        "discoverer": null
+    },
+    {
+        "name": "hook",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "hook with tail",
+        "pattern": "*.*..",
+        "discoverer": null
+    },
+    {
+        "name": "houndstooth agar",
+        "pattern": ".***",
+        "discoverer": null
+    },
+    {
+        "name": "house",
+        "pattern": ".***.",
+        "discoverer": null
+    },
+    {
+        "name": "H-to-G",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "H-to-MWSS",
+        "pattern": ".............................**................",
+        "discoverer": "Tanner Jacobi"
+    },
+    {
+        "name": "hustler",
+        "pattern": ".....**....",
+        "discoverer": null
+    },
+    {
+        "name": "hustler II",
+        "pattern": "....*...........",
+        "discoverer": null
+    },
+    {
+        "name": "HW emulator",
+        "pattern": ".......**.......",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "HWSS",
+        "pattern": "...**..",
+        "discoverer": "Conway"
+    },
+    {
+        "name": "HWSS emulator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "HW volcano",
+        "pattern": ".........*..........................",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "hybrid grey ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "I-heptomino",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "IMG",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Immigration",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "independent conduit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "induction coil",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "inductor",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "infinite glider hotel",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "infinite growth",
+        "pattern": "......*.",
+        "discoverer": null
+    },
+    {
+        "name": "initials",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "inject",
+        "pattern": "..*.*..................",
+        "discoverer": "Dave Buckingham that can fill a\n   hole"
+    },
+    {
+        "name": "inline inverter",
+        "pattern": "................*...................",
+        "discoverer": null
+    },
+    {
+        "name": "inserter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "integral",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "integral sign",
+        "pattern": "...**",
+        "discoverer": null
+    },
+    {
+        "name": "intentionless",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "interchange",
+        "pattern": "..***....***..",
+        "discoverer": null
+    },
+    {
+        "name": "intermediate target",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "intermittent stream",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "intermitting glider gun",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "inverter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "inverting reflector",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "island",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Iwona",
+        "pattern": "..............***...",
+        "discoverer": null
+    },
+    {
+        "name": "J",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "jack",
+        "pattern": "...*.....*...",
+        "discoverer": null
+    },
+    {
+        "name": "jagged lines",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "jam",
+        "pattern": "...**.",
+        "discoverer": "Achim Flammenkamp"
+    },
+    {
+        "name": "JavaLifeSearch",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Jaws",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "JC",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "JHC",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "J-heptomino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "JLS",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Jolson",
+        "pattern": ".**......**..",
+        "discoverer": null
+    },
+    {
+        "name": "junk",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Justyna",
+        "pattern": ".................*....",
+        "discoverer": null
+    },
+    {
+        "name": "keeper",
+        "pattern": "................*..............................",
+        "discoverer": null
+    },
+    {
+        "name": "keys",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "kickback",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "kickback reaction",
+        "pattern": ".....*..",
+        "discoverer": null
+    },
+    {
+        "name": "kidney",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "killer toads",
+        "pattern": "..**.......***",
+        "discoverer": null
+    },
+    {
+        "name": "Klein bottle",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "knightship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "L112",
+        "pattern": "...............**.......",
+        "discoverer": null
+    },
+    {
+        "name": "L156",
+        "pattern": "...................**........",
+        "discoverer": null
+    },
+    {
+        "name": "lake",
+        "pattern": "....**....",
+        "discoverer": null
+    },
+    {
+        "name": "lane",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Laputa",
+        "pattern": "...**.**....",
+        "discoverer": null
+    },
+    {
+        "name": "large prime oscillator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "large S",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Lidka",
+        "pattern": "..........***..",
+        "discoverer": "Andrzej\n   Okrasinski"
+    },
+    {
+        "name": "Life",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Life32",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "LifeHistory",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "LifeLab",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "LifeLine",
+        "pattern": "Mar, Jun, Sep, Dec 1971",
+        "discoverer": null
+    },
+    {
+        "name": "Lifenthusiast",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "lifesrc",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "LifeViewer",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "light bulb",
+        "pattern": ".**.*..",
+        "discoverer": null
+    },
+    {
+        "name": "lightspeed bubble",
+        "pattern": ".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*...",
+        "discoverer": "Gabriel Nivasch"
+    },
+    {
+        "name": "lightspeed ribbon",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "lightspeed telegraph",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "lightspeed wire",
+        "pattern": "...*...........................................................",
+        "discoverer": null
+    },
+    {
+        "name": "lightweight emulator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "lightweight spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "lightweight volcano",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "linear growth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "linear propagator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "line crosser",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "line-cutting reaction",
+        "pattern": ".........................**.................................",
+        "discoverer": null
+    },
+    {
+        "name": "line-mending reaction",
+        "pattern": "...........**.............................................",
+        "discoverer": null
+    },
+    {
+        "name": "line puffer",
+        "pattern": null,
+        "discoverer": "Alan Hensel"
+    },
+    {
+        "name": "line ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "linestretcher",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "loading dock",
+        "pattern": "....*....",
+        "discoverer": null
+    },
+    {
+        "name": "loaf",
+        "pattern": ".**.",
+        "discoverer": null
+    },
+    {
+        "name": "loafer",
+        "pattern": ".**..*.**",
+        "discoverer": null
+    },
+    {
+        "name": "loaflipflop",
+        "pattern": "................*.................",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "loaf on loaf",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "loaf pull",
+        "pattern": ".*.....",
+        "discoverer": null
+    },
+    {
+        "name": "loaf siamese barge",
+        "pattern": "..**.",
+        "discoverer": null
+    },
+    {
+        "name": "lobster",
+        "pattern": "............***...........",
+        "discoverer": null
+    },
+    {
+        "name": "logarithmic growth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "LoM",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "lone dot agar",
+        "pattern": "....**..**..**..**..**..**..**..**....",
+        "discoverer": null
+    },
+    {
+        "name": "lonely bee",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "long",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "long barge",
+        "pattern": ".*...",
+        "discoverer": null
+    },
+    {
+        "name": "long boat",
+        "pattern": ".*..",
+        "discoverer": null
+    },
+    {
+        "name": "long bookend",
+        "pattern": "...**",
+        "discoverer": null
+    },
+    {
+        "name": "long canoe",
+        "pattern": "....**",
+        "discoverer": null
+    },
+    {
+        "name": "long hat",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "long hook",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "long house",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "long integral",
+        "pattern": "..**",
+        "discoverer": null
+    },
+    {
+        "name": "long long",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "long long barge",
+        "pattern": ".*....",
+        "discoverer": null
+    },
+    {
+        "name": "long long boat",
+        "pattern": ".*...",
+        "discoverer": null
+    },
+    {
+        "name": "long long canoe",
+        "pattern": ".....**",
+        "discoverer": null
+    },
+    {
+        "name": "long long ship",
+        "pattern": "**...",
+        "discoverer": null
+    },
+    {
+        "name": "long long snake",
+        "pattern": "**....",
+        "discoverer": null
+    },
+    {
+        "name": "long shillelagh",
+        "pattern": "**..**",
+        "discoverer": null
+    },
+    {
+        "name": "long ship",
+        "pattern": "**..",
+        "discoverer": null
+    },
+    {
+        "name": "long sinking ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "long snake",
+        "pattern": "**...",
+        "discoverer": null
+    },
+    {
+        "name": "loop",
+        "pattern": ".**..",
+        "discoverer": null
+    },
+    {
+        "name": "looping spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "lossless elbow",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "low-density Life",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "lumps of muck",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "LW emulator",
+        "pattern": "..**.*..*.**..",
+        "discoverer": null
+    },
+    {
+        "name": "LWSS",
+        "pattern": ".*..*",
+        "discoverer": "Conway when one formed from a random\n   soup"
+    },
+    {
+        "name": "LWSS emulator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "LWSS-glider bounce",
+        "pattern": ".****........",
+        "discoverer": null
+    },
+    {
+        "name": "LWSS-LWSS bounce",
+        "pattern": "*..*.......*..*",
+        "discoverer": null
+    },
+    {
+        "name": "LWSS-LWSS deflection",
+        "pattern": ".........*..*",
+        "discoverer": null
+    },
+    {
+        "name": "LWSS-to-G",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "LWTDS",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "LW volcano",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Lx200",
+        "pattern": ".....................**.............",
+        "discoverer": null
+    },
+    {
+        "name": "macrocell",
+        "pattern": "[M2] (golly 3.0)",
+        "discoverer": null
+    },
+    {
+        "name": "macro-spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mango",
+        "pattern": ".**..",
+        "discoverer": null
+    },
+    {
+        "name": "mathematician",
+        "pattern": "....*....",
+        "discoverer": null
+    },
+    {
+        "name": "Max",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mazing",
+        "pattern": "...**..",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "mc",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "medium fish",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "megacell",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "memory cell",
+        "pattern": "...............**........................**",
+        "discoverer": null
+    },
+    {
+        "name": "metacatacryst",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "metacell",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "metamorphosis",
+        "pattern": "...................*.........",
+        "discoverer": null
+    },
+    {
+        "name": "metamorphosis II",
+        "pattern": "......................*.",
+        "discoverer": null
+    },
+    {
+        "name": "metapixel",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "methuselah",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Mickey Mouse",
+        "pattern": ".**....**.",
+        "discoverer": null
+    },
+    {
+        "name": "middleweight emulator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "middleweight spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "middleweight volcano",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mini pressure cooker",
+        "pattern": ".....*.....",
+        "discoverer": null
+    },
+    {
+        "name": "MIT oscillator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "MMM breeder",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "MMS breeder",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mod",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mold",
+        "pattern": "...**.",
+        "discoverer": "Achim Flammenkamp"
+    },
+    {
+        "name": "monochromatic salvo",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "monogram",
+        "pattern": "**...**",
+        "discoverer": null
+    },
+    {
+        "name": "monoparity salvo",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Moore neighbourhood",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "moose antlers",
+        "pattern": "**.....**",
+        "discoverer": null
+    },
+    {
+        "name": "mosquito",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mosquito1",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mosquito2",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mosquito3",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mosquito4",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mosquito5",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "mould",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "moving sawtooth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "MSM breeder",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "multiple roteightors",
+        "pattern": "....................*...........",
+        "discoverer": null
+    },
+    {
+        "name": "multiplicity",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "multi-state Life",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "multum in parvo",
+        "pattern": "...***",
+        "discoverer": null
+    },
+    {
+        "name": "muttering moat",
+        "pattern": "**.....",
+        "discoverer": null
+    },
+    {
+        "name": "MW emulator",
+        "pattern": ".......*.......",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "MWSS",
+        "pattern": "...*..",
+        "discoverer": "Conway"
+    },
+    {
+        "name": "MWSS emulator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "MWSS out of the blue",
+        "pattern": "*..*.................................",
+        "discoverer": "Peter Rott"
+    },
+    {
+        "name": "MWSS-to-G",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "MW volcano",
+        "pattern": "......*......",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "My Experience with B-heptominos in Oscillators",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "natural",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "natural Heisenburp",
+        "pattern": "..................**.................",
+        "discoverer": null
+    },
+    {
+        "name": "ND read",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "negative spaceship",
+        "pattern": ".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.",
+        "discoverer": "Hartmut\n   Holzwart"
+    },
+    {
+        "name": "negentropy",
+        "pattern": "...**.*....",
+        "discoverer": null
+    },
+    {
+        "name": "neighbour",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "new five",
+        "pattern": "..**.....",
+        "discoverer": null
+    },
+    {
+        "name": "new gun",
+        "pattern": ".........................**.....**",
+        "discoverer": "Bill Gosper"
+    },
+    {
+        "name": "n-omino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "non-destructive read",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "nonfiller",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "non-monotonic",
+        "pattern": "..........**.*.......",
+        "discoverer": "Hartmut Holzwart"
+    },
+    {
+        "name": "nonomino switch engine predecessor",
+        "pattern": "***...",
+        "discoverer": null
+    },
+    {
+        "name": "non-spark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "non-standard spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "non-trivial",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "novelty generator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "NW31",
+        "pattern": "**.......................",
+        "discoverer": null
+    },
+    {
+        "name": "NW31T120",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "oblique",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "obo spark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "octagon II",
+        "pattern": "...**...",
+        "discoverer": null
+    },
+    {
+        "name": "octagon IV",
+        "pattern": ".......**.......",
+        "discoverer": null
+    },
+    {
+        "name": "octomino",
+        "pattern": "..**",
+        "discoverer": null
+    },
+    {
+        "name": "odd keys",
+        "pattern": "..........*.",
+        "discoverer": null
+    },
+    {
+        "name": "omino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "omniperiodic",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "one per generation",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "one-sided spaceship synthesis",
+        "pattern": "...*.....",
+        "discoverer": null
+    },
+    {
+        "name": "one-time",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "onion rings",
+        "pattern": "......******",
+        "discoverer": null
+    },
+    {
+        "name": "Online Life-Like CA Soup Search",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "on-off",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "O-pentomino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "orbit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Orion",
+        "pattern": "...**.........",
+        "discoverer": null
+    },
+    {
+        "name": "orphan",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Orthogonoid",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "oscillator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Osqrtlogt",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "OTCA metapixel",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "out of the blue",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "overclocking",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "overcrowding",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "over-exposure",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "overpopulation",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "over-unity reaction",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "overweight spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "OWSS",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Ox",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p1",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p104 gun",
+        "pattern": ".**........**..........................",
+        "discoverer": null
+    },
+    {
+        "name": "p11 bumper",
+        "pattern": "............................*..",
+        "discoverer": null
+    },
+    {
+        "name": "p130 shuttle",
+        "pattern": ".....**................................**.....",
+        "discoverer": null
+    },
+    {
+        "name": "p144 gun",
+        "pattern": null,
+        "discoverer": "Bill Gosper"
+    },
+    {
+        "name": "p14 gun",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p15 bouncer",
+        "pattern": "........................*..",
+        "discoverer": null
+    },
+    {
+        "name": "p15 bumper",
+        "pattern": "............................*.*",
+        "discoverer": null
+    },
+    {
+        "name": "p15 reflector",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p184 gun",
+        "pattern": "...................*...........",
+        "discoverer": null
+    },
+    {
+        "name": "p1 megacell",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p1 telegraph",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p22 gun",
+        "pattern": "..................**.........................",
+        "discoverer": null
+    },
+    {
+        "name": "p246 gun",
+        "pattern": "..................................*........",
+        "discoverer": null
+    },
+    {
+        "name": "p24 gun",
+        "pattern": ".......................*..*................",
+        "discoverer": "Noam Elkies"
+    },
+    {
+        "name": "p256 gun",
+        "pattern": "...............................**................",
+        "discoverer": null
+    },
+    {
+        "name": "p29 pentadecathlon hassler",
+        "pattern": "..........*.......*....................*.......*..........",
+        "discoverer": null
+    },
+    {
+        "name": "p30 gun",
+        "pattern": "**...................................",
+        "discoverer": null
+    },
+    {
+        "name": "p30 reflector",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p30 shuttle",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p36 gun",
+        "pattern": "................................................*.",
+        "discoverer": null
+    },
+    {
+        "name": "p3 bumper",
+        "pattern": "..*........................*..................",
+        "discoverer": "Arie Paap"
+    },
+    {
+        "name": "p44 gun",
+        "pattern": ".................**......**.................",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "p44 MWSS gun",
+        "pattern": ".......*..........................................",
+        "discoverer": null
+    },
+    {
+        "name": "p45 gun",
+        "pattern": "...............*..*..*..........................",
+        "discoverer": null
+    },
+    {
+        "name": "p46 gun",
+        "pattern": "....**.............................",
+        "discoverer": null
+    },
+    {
+        "name": "p46 shuttle",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p48 gun",
+        "pattern": ".................**...........**.............",
+        "discoverer": null
+    },
+    {
+        "name": "p4 bumper",
+        "pattern": ".....................*..",
+        "discoverer": null
+    },
+    {
+        "name": "p4 reflector",
+        "pattern": "................................*.........................",
+        "discoverer": null
+    },
+    {
+        "name": "p54 shuttle",
+        "pattern": "**.........................**",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "p5 bouncer",
+        "pattern": "..........................*..",
+        "discoverer": null
+    },
+    {
+        "name": "p5 bumper",
+        "pattern": "............................*",
+        "discoverer": null
+    },
+    {
+        "name": "p5 reflector",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p60 gun",
+        "pattern": "............................*..........",
+        "discoverer": "Bill Gosper"
+    },
+    {
+        "name": "p690 gun",
+        "pattern": "...........*........................................",
+        "discoverer": "Noam Elkies"
+    },
+    {
+        "name": "p6 bouncer",
+        "pattern": ".......................*.",
+        "discoverer": null
+    },
+    {
+        "name": "p6 pipsquirter",
+        "pattern": ".....*.........",
+        "discoverer": "Noam Elkies"
+    },
+    {
+        "name": "p6 reflector",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p6 shuttle",
+        "pattern": "*.............",
+        "discoverer": "Nicolay Beluchenko"
+    },
+    {
+        "name": "p72 quasi-shuttle",
+        "pattern": "..............................*......",
+        "discoverer": "Jason\n   Summers"
+    },
+    {
+        "name": "p7 bouncer",
+        "pattern": ".......................*.",
+        "discoverer": null
+    },
+    {
+        "name": "p7 bumper",
+        "pattern": "......*..................",
+        "discoverer": null
+    },
+    {
+        "name": "p7 pipsquirter",
+        "pattern": "................*.....",
+        "discoverer": "Noam Elkies"
+    },
+    {
+        "name": "p7 reflector",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p8 bouncer",
+        "pattern": "................*.",
+        "discoverer": null
+    },
+    {
+        "name": "p8 bumper",
+        "pattern": "....................*..",
+        "discoverer": null
+    },
+    {
+        "name": "p8 G-to-H",
+        "pattern": "....*.........*...................",
+        "discoverer": "Paul Callahan in November 1998  and used"
+    },
+    {
+        "name": "p8 reflector",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "p90 gun",
+        "pattern": "......................................*.........................",
+        "discoverer": null
+    },
+    {
+        "name": "p92 gun",
+        "pattern": "....**..............*.........................",
+        "discoverer": "Bill Gosper"
+    },
+    {
+        "name": "p9 bumper",
+        "pattern": "........................*..",
+        "discoverer": null
+    },
+    {
+        "name": "pair of bookends",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pair of tables",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "paperclip",
+        "pattern": "..**.",
+        "discoverer": null
+    },
+    {
+        "name": "parallel grey ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Parallel HBK",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Parallel HBK gun",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "parasite",
+        "pattern": "......*.............*.........",
+        "discoverer": null
+    },
+    {
+        "name": "parent",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "parent cells",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "parity",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "partial result",
+        "pattern": "....***...................",
+        "discoverer": "Josh Ball"
+    },
+    {
+        "name": "PD",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "PD hassler",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "PD-pair reflector",
+        "pattern": "..............***......",
+        "discoverer": null
+    },
+    {
+        "name": "pedestle",
+        "pattern": ".....*.....",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "penny lane",
+        "pattern": "...**.....**...",
+        "discoverer": null
+    },
+    {
+        "name": "pentadecathlon",
+        "pattern": "..*....*..",
+        "discoverer": null
+    },
+    {
+        "name": "pentant",
+        "pattern": "**........",
+        "discoverer": null
+    },
+    {
+        "name": "pentaplet",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pentapole",
+        "pattern": "**......",
+        "discoverer": null
+    },
+    {
+        "name": "pentoad",
+        "pattern": "...........**",
+        "discoverer": null
+    },
+    {
+        "name": "pentomino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "period",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "period doubler",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "periodic",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "period multiplier",
+        "pattern": "....................*........................",
+        "discoverer": null
+    },
+    {
+        "name": "permanent switch",
+        "pattern": ".**........................................................",
+        "discoverer": null
+    },
+    {
+        "name": "perpendicular grey ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "perturb",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "perturbation",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "PF35W",
+        "pattern": "*.........**...",
+        "discoverer": null
+    },
+    {
+        "name": "phase",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "phase change",
+        "pattern": "..........*....",
+        "discoverer": "Dean\n   Hickerson"
+    },
+    {
+        "name": "phase shift",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "phi",
+        "pattern": ".***.",
+        "discoverer": null
+    },
+    {
+        "name": "phi calculator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "phoenix",
+        "pattern": "....*...",
+        "discoverer": "the MIT group"
+    },
+    {
+        "name": "pi",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Pianola breeder",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pi calculator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pi climber",
+        "pattern": "..*..",
+        "discoverer": null
+    },
+    {
+        "name": "pi-heptomino",
+        "pattern": "***",
+        "discoverer": null
+    },
+    {
+        "name": "pincers",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pinwheel",
+        "pattern": "......**....",
+        "discoverer": null
+    },
+    {
+        "name": "pi orbital",
+        "pattern": "..............**....**....**...............................",
+        "discoverer": null
+    },
+    {
+        "name": "pi portraitor",
+        "pattern": "...........**...........",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "pipsquirt",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pipsquirter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pi ship",
+        "pattern": "............*............",
+        "discoverer": null
+    },
+    {
+        "name": "piston",
+        "pattern": "**.......**",
+        "discoverer": null
+    },
+    {
+        "name": "pi wave",
+        "pattern": "***...............***...............***...............***",
+        "discoverer": null
+    },
+    {
+        "name": "pixel",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "plet",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "polyomino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "polyplet",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pond",
+        "pattern": ".**.",
+        "discoverer": null
+    },
+    {
+        "name": "pond on pond",
+        "pattern": ".**...**.",
+        "discoverer": null
+    },
+    {
+        "name": "popover",
+        "pattern": ".....................*..........",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "population",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "P-pentomino",
+        "pattern": "**",
+        "discoverer": null
+    },
+    {
+        "name": "PPS",
+        "pattern": "...*.....*...",
+        "discoverer": "David Bell"
+    },
+    {
+        "name": "pre-beehive",
+        "pattern": "***",
+        "discoverer": null
+    },
+    {
+        "name": "pre-block",
+        "pattern": "*.",
+        "discoverer": null
+    },
+    {
+        "name": "precursor",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "predecessor",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pre-pre-block",
+        "pattern": "*.*",
+        "discoverer": null
+    },
+    {
+        "name": "pre-pulsar",
+        "pattern": "***...***",
+        "discoverer": null
+    },
+    {
+        "name": "pre-pulsar spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pressure cooker",
+        "pattern": ".....*.....",
+        "discoverer": "the MIT group"
+    },
+    {
+        "name": "primer",
+        "pattern": null,
+        "discoverer": "Jason Summers"
+    },
+    {
+        "name": "PRNG",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "propagator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "protein",
+        "pattern": "....**.......",
+        "discoverer": null
+    },
+    {
+        "name": "pseudo",
+        "pattern": "..................................*...........................",
+        "discoverer": null
+    },
+    {
+        "name": "pseudo-barberpole",
+        "pattern": "..........**",
+        "discoverer": "Achim Flammenkamp"
+    },
+    {
+        "name": "pseudo-random glider generator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pseudo-random number generator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pseudo still life",
+        "pattern": "--------------",
+        "discoverer": null
+    },
+    {
+        "name": "puffer",
+        "pattern": ".***......*.....*......***.",
+        "discoverer": null
+    },
+    {
+        "name": "puffer engine",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pufferfish",
+        "pattern": "...*.......*...",
+        "discoverer": null
+    },
+    {
+        "name": "pufferfish spaceship",
+        "pattern": ".......*.......*..................*.......*........",
+        "discoverer": null
+    },
+    {
+        "name": "puffer train",
+        "pattern": ".***...........***",
+        "discoverer": null
+    },
+    {
+        "name": "puff suppressor",
+        "pattern": "............*....................",
+        "discoverer": null
+    },
+    {
+        "name": "pull",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pulsar",
+        "pattern": "..***...***..",
+        "discoverer": null
+    },
+    {
+        "name": "pulsar 18-22-20",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pulsar CP 48-56-72",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Pulsar Pixel Display",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pulsar quadrant",
+        "pattern": ".....*..",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "pulse",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pulse divider",
+        "pattern": ".....**...................",
+        "discoverer": null
+    },
+    {
+        "name": "pulshuttle V",
+        "pattern": ".............*..............*.............",
+        "discoverer": null
+    },
+    {
+        "name": "pure glider generator",
+        "pattern": "..*............",
+        "discoverer": null
+    },
+    {
+        "name": "push",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "pushalong",
+        "pattern": "..***.*.....",
+        "discoverer": "David Bell"
+    },
+    {
+        "name": "pyrotechnecium",
+        "pattern": ".......*........",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "pyrotechneczum",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "python",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Q",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "qd",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Q-pentomino",
+        "pattern": "****",
+        "discoverer": null
+    },
+    {
+        "name": "quad",
+        "pattern": "**..**",
+        "discoverer": null
+    },
+    {
+        "name": "QuadLife",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "quadpole",
+        "pattern": "**.....",
+        "discoverer": null
+    },
+    {
+        "name": "quad pseudo",
+        "pattern": "........**.",
+        "discoverer": "Gabriel Nivasch"
+    },
+    {
+        "name": "quadratic filter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "quadratic growth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "quadratic replicator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "quadratic sawtooth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "quadri-Snark",
+        "pattern": ".*.......................................................",
+        "discoverer": "Tanner Jacobi"
+    },
+    {
+        "name": "quapole",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "quarter",
+        "pattern": "........**...",
+        "discoverer": null
+    },
+    {
+        "name": "quarter diagonal",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "quasar",
+        "pattern": "..........***...***..........",
+        "discoverer": null
+    },
+    {
+        "name": "quasi still life",
+        "pattern": "----------------",
+        "discoverer": null
+    },
+    {
+        "name": "queen bee",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "queen bee shuttle",
+        "pattern": ".........*............",
+        "discoverer": "Bill Gosper"
+    },
+    {
+        "name": "queen bee shuttle pair",
+        "pattern": ".......................*.",
+        "discoverer": null
+    },
+    {
+        "name": "Quetzal",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Quetzalcoatlus",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "quilt",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "R",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "R190",
+        "pattern": "..........**.........................",
+        "discoverer": null
+    },
+    {
+        "name": "R2D2",
+        "pattern": ".....*.....",
+        "discoverer": "Noam Elkies"
+    },
+    {
+        "name": "r5",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "R64",
+        "pattern": "..........**...........",
+        "discoverer": null
+    },
+    {
+        "name": "rabbits",
+        "pattern": "*...***",
+        "discoverer": "Trevorrow"
+    },
+    {
+        "name": "racetrack",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "rake",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "rattlesnake",
+        "pattern": "........**...",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "R-bee",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "reaction envelope",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "reanimation",
+        "pattern": "..........*.......................",
+        "discoverer": null
+    },
+    {
+        "name": "reburnable fuse",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "receiver",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "recipe",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "recovery time",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "rectifier",
+        "pattern": "..*.........................................",
+        "discoverer": null
+    },
+    {
+        "name": "recursive filter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "reflector",
+        "pattern": "................**...........*......**..................",
+        "discoverer": null
+    },
+    {
+        "name": "reflectorless rotating oscillator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "regulator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "relay",
+        "pattern": "...........................*....*..",
+        "discoverer": null
+    },
+    {
+        "name": "repeater",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "repeat time",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "rephaser",
+        "pattern": "..*..*..",
+        "discoverer": null
+    },
+    {
+        "name": "replicator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "reverse caber tosser",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "reverse fuse",
+        "pattern": ".............**",
+        "discoverer": null
+    },
+    {
+        "name": "revolver",
+        "pattern": "*............*",
+        "discoverer": null
+    },
+    {
+        "name": "RF28B",
+        "pattern": "........*..........................*........",
+        "discoverer": null
+    },
+    {
+        "name": "RF48H",
+        "pattern": "......*..................*..",
+        "discoverer": null
+    },
+    {
+        "name": "rle",
+        "pattern": "x = 36, y = 9, rule = B3/S23",
+        "discoverer": null
+    },
+    {
+        "name": "R-mango",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "RNE-19T84",
+        "pattern": ".................*.........",
+        "discoverer": null
+    },
+    {
+        "name": "rock",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "roteightor",
+        "pattern": ".*............",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "rotor",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "R-pentomino",
+        "pattern": ".**",
+        "discoverer": null
+    },
+    {
+        "name": "RRO",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "rule 22",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "ruler",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "rumbling river",
+        "pattern": "..............**......**......**...*.**..........",
+        "discoverer": null
+    },
+    {
+        "name": "Rx202",
+        "pattern": "..............**...............",
+        "discoverer": null
+    },
+    {
+        "name": "S",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "sailboat",
+        "pattern": "........*...........*........",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "salvo",
+        "pattern": "**........",
+        "discoverer": null
+    },
+    {
+        "name": "sawtooth",
+        "pattern": ".....................................................**.*.....",
+        "discoverer": null
+    },
+    {
+        "name": "SBM",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Schick engine",
+        "pattern": "****..............",
+        "discoverer": "Paul\n   Schick"
+    },
+    {
+        "name": "Schick ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "scorpion",
+        "pattern": "...*...",
+        "discoverer": null
+    },
+    {
+        "name": "scrubber",
+        "pattern": "....*......",
+        "discoverer": null
+    },
+    {
+        "name": "SE",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "seal",
+        "pattern": "...*..**..........................",
+        "discoverer": null
+    },
+    {
+        "name": "search program",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "second glider domain",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "second natural glider",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "seed",
+        "pattern": "...................................*..........",
+        "discoverer": null
+    },
+    {
+        "name": "Seeds of Destruction Game",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "self-constructing",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "self-supporting",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "semi-cenark",
+        "pattern": "*.*.................................",
+        "discoverer": null
+    },
+    {
+        "name": "semi-Snark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "sesquihat",
+        "pattern": "....*..",
+        "discoverer": null
+    },
+    {
+        "name": "SGR",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "shield bug",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "shillelagh",
+        "pattern": "**...",
+        "discoverer": null
+    },
+    {
+        "name": "ship",
+        "pattern": "**.",
+        "discoverer": null
+    },
+    {
+        "name": "ship in a bottle",
+        "pattern": "....**......**....",
+        "discoverer": "Bill Gosper"
+    },
+    {
+        "name": "ship on boat",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "ship on ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "ship-tie",
+        "pattern": "**....",
+        "discoverer": null
+    },
+    {
+        "name": "ship tie boat",
+        "pattern": "**....",
+        "discoverer": null
+    },
+    {
+        "name": "short keys",
+        "pattern": ".*........*.",
+        "discoverer": null
+    },
+    {
+        "name": "shotgun",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "shoulder",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "shuttle",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "siamese",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "side",
+        "pattern": "**...",
+        "discoverer": null
+    },
+    {
+        "name": "sidecar",
+        "pattern": ".*......",
+        "discoverer": "Hartmut\n   Holzwart"
+    },
+    {
+        "name": "side-shooting gun",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "sidesnagger",
+        "pattern": "..*.............",
+        "discoverer": "Chris Cain"
+    },
+    {
+        "name": "side-tracking",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "sidewalk",
+        "pattern": ".**.**",
+        "discoverer": null
+    },
+    {
+        "name": "siesta",
+        "pattern": "...........**...",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "signal",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "signal elbow",
+        "pattern": "........................*..*......",
+        "discoverer": null
+    },
+    {
+        "name": "Silver G-to-H",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Silver reflector",
+        "pattern": "........*.............*.......................................",
+        "discoverer": "Stephen\n   Silver"
+    },
+    {
+        "name": "Simkin glider gun",
+        "pattern": "**.....**........................",
+        "discoverer": null
+    },
+    {
+        "name": "single-arm",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "single-channel",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "single-channel Demonoid",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "single-lane",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "singleton",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "singular flip flop",
+        "pattern": "..*...",
+        "discoverer": null
+    },
+    {
+        "name": "sinking ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Sir Robin",
+        "pattern": "....**.........................",
+        "discoverer": null
+    },
+    {
+        "name": "six Ls",
+        "pattern": "...*...",
+        "discoverer": null
+    },
+    {
+        "name": "sixty-nine",
+        "pattern": ".........*...........",
+        "discoverer": null
+    },
+    {
+        "name": "skewed quad",
+        "pattern": ".**....",
+        "discoverer": null
+    },
+    {
+        "name": "skewed traffic light",
+        "pattern": ".............**.........",
+        "discoverer": null
+    },
+    {
+        "name": "sL",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "slide gun",
+        "pattern": "..............**.",
+        "discoverer": null
+    },
+    {
+        "name": "sliding block memory",
+        "pattern": "**..........",
+        "discoverer": null
+    },
+    {
+        "name": "slmake",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "slow",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "slow elbow",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "slow glider construction",
+        "pattern": "**..***...............................................",
+        "discoverer": null
+    },
+    {
+        "name": "slow salvo",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "small fish",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "small lake",
+        "pattern": "....*....",
+        "discoverer": null
+    },
+    {
+        "name": "smiley",
+        "pattern": "**.*.**",
+        "discoverer": "Achim Flammenkamp"
+    },
+    {
+        "name": "SMM breeder",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "smoke",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "smoking ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "snacker",
+        "pattern": "**................**",
+        "discoverer": "Mark Niemiec"
+    },
+    {
+        "name": "snail",
+        "pattern": ".*....................................",
+        "discoverer": null
+    },
+    {
+        "name": "snake",
+        "pattern": "**.*",
+        "discoverer": null
+    },
+    {
+        "name": "snake bit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "snake bridge snake",
+        "pattern": "....**",
+        "discoverer": null
+    },
+    {
+        "name": "snake dance",
+        "pattern": "...**.*..",
+        "discoverer": null
+    },
+    {
+        "name": "snake pit",
+        "pattern": "*.**.**",
+        "discoverer": null
+    },
+    {
+        "name": "snake siamese snake",
+        "pattern": "**.**.*",
+        "discoverer": null
+    },
+    {
+        "name": "Snark",
+        "pattern": ".............................**....................",
+        "discoverer": null
+    },
+    {
+        "name": "Snarkmaker",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "SNG",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "SODGame",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "sombrero",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "sombreros",
+        "pattern": "...**........**...",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "soup",
+        "pattern": "****..**.***.*...*.***.**..****",
+        "discoverer": null
+    },
+    {
+        "name": "space dust",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "spacefiller",
+        "pattern": "..................*........",
+        "discoverer": null
+    },
+    {
+        "name": "space nonfiller",
+        "pattern": "...................***...............",
+        "discoverer": null
+    },
+    {
+        "name": "space rake",
+        "pattern": "...........**.....****",
+        "discoverer": null
+    },
+    {
+        "name": "spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "spaghetti monster",
+        "pattern": null,
+        "discoverer": "Tim Coe"
+    },
+    {
+        "name": "spark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "spark coil",
+        "pattern": "**....**",
+        "discoverer": null
+    },
+    {
+        "name": "sparker",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "sparking eater",
+        "pattern": "..*.........**........*..........**.",
+        "discoverer": null
+    },
+    {
+        "name": "sparky",
+        "pattern": "..........*....................",
+        "discoverer": null
+    },
+    {
+        "name": "sparse Life",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Spartan",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "speed booster",
+        "pattern": "....................*........................",
+        "discoverer": null
+    },
+    {
+        "name": "speed of light",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "S-pentomino",
+        "pattern": "..**",
+        "discoverer": null
+    },
+    {
+        "name": "spider",
+        "pattern": "......*...***.....***...*......",
+        "discoverer": "David Bell"
+    },
+    {
+        "name": "spiral",
+        "pattern": "**....*",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "spiral growth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "splitter",
+        "pattern": "..........**...........*......**....................",
+        "discoverer": null
+    },
+    {
+        "name": "SPPS",
+        "pattern": null,
+        "discoverer": "David Bell"
+    },
+    {
+        "name": "sqrtgun",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "squaredance",
+        "pattern": "**......",
+        "discoverer": "Don Woods"
+    },
+    {
+        "name": "squirter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "S-spiral",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "stabilized switch engine",
+        "pattern": "..*.........................................................",
+        "discoverer": null
+    },
+    {
+        "name": "stable",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "stable pseudo-Heisenburp",
+        "pattern": null,
+        "discoverer": "Noam\n   Elkies to insert a signal"
+    },
+    {
+        "name": "staged recovery",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "stairstep hexomino",
+        "pattern": "..**",
+        "discoverer": null
+    },
+    {
+        "name": "stamp collection",
+        "pattern": ".*......*.*.....*....*.*.*...................*.",
+        "discoverer": null
+    },
+    {
+        "name": "standard spaceship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "star",
+        "pattern": ".....*.....",
+        "discoverer": null
+    },
+    {
+        "name": "star gate",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "stator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "statorless",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "statorless p5",
+        "pattern": "*.............*",
+        "discoverer": null
+    },
+    {
+        "name": "step",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "stillater",
+        "pattern": "...*....",
+        "discoverer": null
+    },
+    {
+        "name": "still life",
+        "pattern": "...*..*..*..*..*..*...",
+        "discoverer": null
+    },
+    {
+        "name": "still life tagalong",
+        "pattern": "..**...............",
+        "discoverer": null
+    },
+    {
+        "name": "stop and go",
+        "pattern": "........................................*.",
+        "discoverer": null
+    },
+    {
+        "name": "stop and restart",
+        "pattern": "........................................................*.",
+        "discoverer": null
+    },
+    {
+        "name": "stream",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "stretcher",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "strict still life",
+        "pattern": "--------------",
+        "discoverer": null
+    },
+    {
+        "name": "strict volatility",
+        "pattern": "...........**...",
+        "discoverer": null
+    },
+    {
+        "name": "super beehive",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "superfountain",
+        "pattern": "...........*...........",
+        "discoverer": "Noam Elkies"
+    },
+    {
+        "name": "superlinear growth",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "superstring",
+        "pattern": ".**..........................................................",
+        "discoverer": null
+    },
+    {
+        "name": "support",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "surprise",
+        "pattern": "...*....**",
+        "discoverer": null
+    },
+    {
+        "name": "SW1T43",
+        "pattern": ".......**........",
+        "discoverer": null
+    },
+    {
+        "name": "SW-2",
+        "pattern": "...................................**.....",
+        "discoverer": null
+    },
+    {
+        "name": "SW-2T21",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "swan",
+        "pattern": ".*..........**..........",
+        "discoverer": "Tim Coe"
+    },
+    {
+        "name": "swimmer",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "swimmer lane",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "switch",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "switchable gun",
+        "pattern": ".................**...........................................",
+        "discoverer": null
+    },
+    {
+        "name": "switch engine",
+        "pattern": ".*.*..",
+        "discoverer": null
+    },
+    {
+        "name": "switch engine channel",
+        "pattern": "..............**................",
+        "discoverer": null
+    },
+    {
+        "name": "switch engine chute",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "switch-engine ping-pong",
+        "pattern": null,
+        "discoverer": "Michael Simkin"
+    },
+    {
+        "name": "symmetric",
+        "pattern": "..*.........",
+        "discoverer": null
+    },
+    {
+        "name": "synchronized",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "synchronous",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "synthesis",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "syringe",
+        "pattern": "....*.............................",
+        "discoverer": "Tanner Jacobi"
+    },
+    {
+        "name": "T",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "table",
+        "pattern": "****",
+        "discoverer": null
+    },
+    {
+        "name": "table on table",
+        "pattern": "*..*",
+        "discoverer": null
+    },
+    {
+        "name": "tag",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "tagalong",
+        "pattern": ".......................*.......................",
+        "discoverer": null
+    },
+    {
+        "name": "tail spark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "tame",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "taming",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "tandem glider",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "target",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "teardrop",
+        "pattern": "***.",
+        "discoverer": null
+    },
+    {
+        "name": "technician",
+        "pattern": ".....*.....",
+        "discoverer": null
+    },
+    {
+        "name": "technician finished product",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "technology",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "tee",
+        "pattern": "...............*.",
+        "discoverer": null
+    },
+    {
+        "name": "teeth",
+        "pattern": null,
+        "discoverer": "Nick Gotts"
+    },
+    {
+        "name": "telegraph",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "ternary reaction",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "test tube baby",
+        "pattern": "**....**",
+        "discoverer": null
+    },
+    {
+        "name": "tetraplet",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "tetromino",
+        "pattern": "**......***......****......***......**.",
+        "discoverer": null
+    },
+    {
+        "name": "The Online Life-Like CA Soup Search",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "The Recursive Universe",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "thumb",
+        "pattern": ".......*..............*.....",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "thunderbird",
+        "pattern": "***",
+        "discoverer": null
+    },
+    {
+        "name": "tick",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "tic tac toe",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "tie",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "time bomb",
+        "pattern": ".*...........**",
+        "discoverer": null
+    },
+    {
+        "name": "titanic toroidal traveler",
+        "pattern": "******",
+        "discoverer": null
+    },
+    {
+        "name": "TL",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "T-nosed p4",
+        "pattern": ".....*.....",
+        "discoverer": "Robert Wainwright"
+    },
+    {
+        "name": "T-nosed p5",
+        "pattern": ".....**...............**.**.....*........",
+        "discoverer": "Nicolay Beluchenko"
+    },
+    {
+        "name": "T-nosed p6",
+        "pattern": "......**...**......",
+        "discoverer": "Achim Flammenkamp"
+    },
+    {
+        "name": "toad",
+        "pattern": ".***",
+        "discoverer": null
+    },
+    {
+        "name": "toad-flipper",
+        "pattern": ".*..............*.",
+        "discoverer": null
+    },
+    {
+        "name": "toad-sucker",
+        "pattern": ".*................",
+        "discoverer": null
+    },
+    {
+        "name": "toaster",
+        "pattern": "....*......**..",
+        "discoverer": null
+    },
+    {
+        "name": "toggleable gun",
+        "pattern": "..............**..............*..",
+        "discoverer": null
+    },
+    {
+        "name": "toggle circuit",
+        "pattern": "...........**....................................**....",
+        "discoverer": null
+    },
+    {
+        "name": "TOLLCASS",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "toolkit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "torus",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "total aperiodic",
+        "pattern": ".........................................*.................",
+        "discoverer": "Bill Gosper"
+    },
+    {
+        "name": "T-pentomino",
+        "pattern": "***",
+        "discoverer": null
+    },
+    {
+        "name": "track",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "tractor beam",
+        "pattern": ".....................*..*......................",
+        "discoverer": null
+    },
+    {
+        "name": "traffic circle",
+        "pattern": ".....................**....**...................",
+        "discoverer": null
+    },
+    {
+        "name": "traffic jam",
+        "pattern": "..***...........",
+        "discoverer": null
+    },
+    {
+        "name": "traffic light",
+        "pattern": "..***..",
+        "discoverer": null
+    },
+    {
+        "name": "traffic lights extruder",
+        "pattern": "......................*.......................*....",
+        "discoverer": null
+    },
+    {
+        "name": "trans-beacon on table",
+        "pattern": "....**",
+        "discoverer": null
+    },
+    {
+        "name": "trans-boat with tail",
+        "pattern": "**...",
+        "discoverer": null
+    },
+    {
+        "name": "transceiver",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "trans-loaf with tail",
+        "pattern": ".*....",
+        "discoverer": null
+    },
+    {
+        "name": "transmitter",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "transparent",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "transparent block reaction",
+        "pattern": "*.............",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "transparent debris effect",
+        "pattern": null,
+        "discoverer": "Stephen Silver"
+    },
+    {
+        "name": "transparent lane",
+        "pattern": "**.......................",
+        "discoverer": null
+    },
+    {
+        "name": "tremi-Snark",
+        "pattern": ".*............................",
+        "discoverer": null
+    },
+    {
+        "name": "trice tongs",
+        "pattern": "..*....",
+        "discoverer": null
+    },
+    {
+        "name": "trigger",
+        "pattern": "....................................................**.",
+        "discoverer": null
+    },
+    {
+        "name": "triomino",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "triple caterer",
+        "pattern": ".....**.........",
+        "discoverer": null
+    },
+    {
+        "name": "triple pseudo",
+        "pattern": "......**",
+        "discoverer": "Gabriel Nivasch"
+    },
+    {
+        "name": "triplet",
+        "pattern": "*..................*.......*.......*..",
+        "discoverer": null
+    },
+    {
+        "name": "tripole",
+        "pattern": "**....",
+        "discoverer": null
+    },
+    {
+        "name": "tritoad",
+        "pattern": ".........**.......",
+        "discoverer": null
+    },
+    {
+        "name": "trivial",
+        "pattern": "........*.*.",
+        "discoverer": null
+    },
+    {
+        "name": "trivial p6",
+        "pattern": "...........**..............",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "trombone slide",
+        "pattern": "......................**...**....................",
+        "discoverer": null
+    },
+    {
+        "name": "true",
+        "pattern": "------------------------------------",
+        "discoverer": null
+    },
+    {
+        "name": "T-tetromino",
+        "pattern": "***",
+        "discoverer": null
+    },
+    {
+        "name": "tub",
+        "pattern": ".*.",
+        "discoverer": null
+    },
+    {
+        "name": "tubber",
+        "pattern": "....*.*......",
+        "discoverer": null
+    },
+    {
+        "name": "tubeater",
+        "pattern": "........*....................",
+        "discoverer": null
+    },
+    {
+        "name": "tubstretcher",
+        "pattern": ".......***.....",
+        "discoverer": "Hartmut Holzwart"
+    },
+    {
+        "name": "tub with tail",
+        "pattern": ".*...",
+        "discoverer": null
+    },
+    {
+        "name": "tugalong",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "tumbler",
+        "pattern": ".*.....*.",
+        "discoverer": "George\n   Collins"
+    },
+    {
+        "name": "tumbling T-tetson",
+        "pattern": ".***.................",
+        "discoverer": null
+    },
+    {
+        "name": "Turing machine",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "turner",
+        "pattern": ".*..............*..............*..............*.........",
+        "discoverer": null
+    },
+    {
+        "name": "turning toads",
+        "pattern": "..............**.....**.....**.....**.....**..............",
+        "discoverer": null
+    },
+    {
+        "name": "turtle",
+        "pattern": ".***.......*",
+        "discoverer": "Dean Hickerson"
+    },
+    {
+        "name": "twin bees shuttle",
+        "pattern": ".**........................",
+        "discoverer": "Bill Gosper"
+    },
+    {
+        "name": "twin bees shuttle pair",
+        "pattern": ".................*...............................",
+        "discoverer": null
+    },
+    {
+        "name": "twin bees shuttle spark",
+        "pattern": "..**.",
+        "discoverer": null
+    },
+    {
+        "name": "twinhat",
+        "pattern": "..*...*..",
+        "discoverer": null
+    },
+    {
+        "name": "twin peaks",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "twirling T-tetsons II",
+        "pattern": ".......**...**..........",
+        "discoverer": null
+    },
+    {
+        "name": "TWIT",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "two-arm",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "two-bit spark",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "two eaters",
+        "pattern": "**.......",
+        "discoverer": null
+    },
+    {
+        "name": "two pulsar quadrants",
+        "pattern": "....*....",
+        "discoverer": null
+    },
+    {
+        "name": "UC",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "underpopulation",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "unit cell",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "unit Life cell",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "universal",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "universal computer",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "universal constructor",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "universal destructor",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "universal register machine",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "universal regulator",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "universal toolkit",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "universe",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "unix",
+        "pattern": ".**.....",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "unknown fate",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "up boat with tail",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "U-pentomino",
+        "pattern": "*.*",
+        "discoverer": null
+    },
+    {
+        "name": "URM",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "vacuum",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Venetian blinds",
+        "pattern": "..................*.**.**......*......**.**.*..................",
+        "discoverer": null
+    },
+    {
+        "name": "very long",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "very long house",
+        "pattern": ".*****.",
+        "discoverer": null
+    },
+    {
+        "name": "volatility",
+        "pattern": ".........*.*.....*...*.....*.*.",
+        "discoverer": null
+    },
+    {
+        "name": "volcano",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "von Neumann neighbourhood",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "V-pentomino",
+        "pattern": "*..",
+        "discoverer": null
+    },
+    {
+        "name": "V spark",
+        "pattern": "*.*",
+        "discoverer": null
+    },
+    {
+        "name": "washerwoman",
+        "pattern": "*.......................................................",
+        "discoverer": null
+    },
+    {
+        "name": "washing machine",
+        "pattern": ".**.**.",
+        "discoverer": null
+    },
+    {
+        "name": "wasp",
+        "pattern": "..........**.**.......",
+        "discoverer": null
+    },
+    {
+        "name": "waterbear",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "wave",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "wavefront",
+        "pattern": "........**...",
+        "discoverer": null
+    },
+    {
+        "name": "waveguide",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "wavestretcher",
+        "pattern": ".......................................................*.....",
+        "discoverer": null
+    },
+    {
+        "name": "wedge",
+        "pattern": null,
+        "discoverer": "Nick Gotts"
+    },
+    {
+        "name": "wedge grow",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "weekender",
+        "pattern": ".*............*.",
+        "discoverer": "David Eppstein"
+    },
+    {
+        "name": "weekender distaff",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "weld",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Wheels, Life, and other Mathematical Amusements",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "why not",
+        "pattern": "...*...",
+        "discoverer": null
+    },
+    {
+        "name": "wick",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "wickstretcher",
+        "pattern": ".................**..............................",
+        "discoverer": null
+    },
+    {
+        "name": "wicktrailer",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "windmill",
+        "pattern": "...........*......",
+        "discoverer": null
+    },
+    {
+        "name": "wing",
+        "pattern": ".**.",
+        "discoverer": null
+    },
+    {
+        "name": "WinLifeSearch",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Winning Ways",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "wire",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "with the grain",
+        "pattern": ".*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*..*.",
+        "discoverer": null
+    },
+    {
+        "name": "with-the-grain grey ship",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "WLS",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "worker bee",
+        "pattern": "**............**",
+        "discoverer": "Dave Buckingham"
+    },
+    {
+        "name": "W-pentomino",
+        "pattern": "*..",
+        "discoverer": null
+    },
+    {
+        "name": "x66",
+        "pattern": "..*......",
+        "discoverer": null
+    },
+    {
+        "name": "Xlife",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "X-pentomino",
+        "pattern": ".*.",
+        "discoverer": null
+    },
+    {
+        "name": "Y-pentomino",
+        "pattern": "..*.",
+        "discoverer": null
+    },
+    {
+        "name": "zebra stripes",
+        "pattern": "..**.......................",
+        "discoverer": null
+    },
+    {
+        "name": "Z-hexomino",
+        "pattern": "**.",
+        "discoverer": null
+    },
+    {
+        "name": "zone of influence",
+        "pattern": null,
+        "discoverer": null
+    },
+    {
+        "name": "Z-pentomino",
+        "pattern": "**.",
+        "discoverer": null
+    },
+    {
+        "name": "zweiback",
+        "pattern": "..........*..............................",
+        "discoverer": "Mark Niemiec"
+    }
+]
